@@ -1,0 +1,3902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignite Racing | 2025 & 2026 STEM Racing National Champions</title>
+  <meta name="description"
+    content="Ignite Racing - Canadian National Champions from SATEC @ W.A. Porter Collegiate Institute.">
+  <link rel="icon" href="logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js" crossorigin></script>
+
+  <style>
+    @font-face {
+      font-family: 'Norwester';
+      src: local('Norwester'), local('Northwester'),
+        url('norwester.otf') format('opentype'),
+        url('norwester.ttf') format('truetype'),
+        url('northwester.otf') format('opentype'),
+        url('northwester.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --brand-blue: #63c9d3;
+      --brand-teal: #7ace7b;
+      --brand-light: #c6ebef;
+      --bg-color: #f0fafb;
+      --surface: #FFFFFF;
+      --border: #a3dfe5;
+      --text-main: #080d0e;
+      --text-dim: #4B5563;
+      --btn-text: #FFFFFF;
+      --grad: linear-gradient(135deg, #63c9d3 0%, #7ace7b 100%);
+      --glow-blue: rgba(99, 201, 211, 0.35);
+      --glow-green: rgba(122, 206, 123, 0.35);
+      --glass: rgba(255,255,255,0.72);
+      --glass-border: rgba(255,255,255,0.9);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: var(--bg-color); }
+    ::-webkit-scrollbar-thumb { background: var(--grad); border-radius: 4px; }
+    ::selection { background: var(--brand-blue); color: #fff; }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Norwester', 'Northwester', 'Poppins', sans-serif;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    .text-center { text-align: center; }
+
+    .grad-text {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-title {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+      color: var(--text-main);
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 1.25rem;
+      max-width: 650px;
+      margin: 0 auto 4rem;
+      font-weight: 400;
+    }
+
+    .year-header {
+      font-size: 2.2rem;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      margin-top: 2rem;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 4rem;
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid transparent;
+      transition: all 0.4s ease;
+    }
+
+    nav.scrolled {
+      padding: 0.8rem 4rem;
+      border-bottom: 1px solid rgba(163,223,229,0.5);
+      background: rgba(255,255,255,0.96);
+      box-shadow: 0 4px 24px rgba(99,201,211,0.1);
+    }
+
+    .logo-container { display: flex; align-items: center; gap: 15px; cursor: pointer; }
+    .navbar-logo { height: 45px; mix-blend-mode: multiply; }
+
+    .logo-text {
+      font-family: 'Norwester', 'Northwester', 'Poppins', sans-serif;
+      font-weight: normal;
+      font-size: 2.2rem;
+      letter-spacing: 2px;
+      margin-top: 4px;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-links { display: flex; gap: 2.5rem; }
+
+    .nav-links a {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-dim);
+      transition: color 0.3s ease;
+      position: relative;
+      padding-bottom: 6px;
+    }
+
+    .nav-links a:hover { color: var(--brand-blue); }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 0%;
+      height: 3px;
+      background: var(--grad);
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+
+    .nav-links a.active { color: var(--brand-blue); }
+    .nav-links a.active::after { width: 100%; }
+
+    .hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; z-index: 1100; }
+    .hamburger div { width: 30px; height: 3px; background: var(--text-main); border-radius: 2px; transition: all 0.3s ease; }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: var(--grad);
+      color: var(--btn-text);
+      border: none;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px var(--glow-blue);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.5s ease;
+    }
+
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 12px 30px var(--glow-blue); }
+    .btn:hover::after { left: 160%; }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--brand-blue);
+      border: 2px solid var(--brand-blue);
+      box-shadow: none;
+    }
+
+    .btn-outline:hover {
+      background: var(--brand-light);
+      color: var(--brand-blue);
+      box-shadow: 0 8px 20px var(--glow-blue);
+    }
+
+    .btn-outline::after { display: none; }
+
+    main { position: relative; min-height: 100vh; }
+
+    .page { display: none; opacity: 0; padding: 8rem 0 6rem 0; }
+
+    .page.active { display: block; animation: fadeInPage 0.5s ease forwards; }
+
+    @keyframes fadeInPage {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 3rem; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .stagger-children > * { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .stagger-children.visible > *:nth-child(1) { opacity:1; transform:none; transition-delay:0.05s; }
+    .stagger-children.visible > *:nth-child(2) { opacity:1; transform:none; transition-delay:0.15s; }
+    .stagger-children.visible > *:nth-child(3) { opacity:1; transform:none; transition-delay:0.25s; }
+    .stagger-children.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay:0.35s; }
+    .stagger-children.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay:0.45s; }
+    .stagger-children.visible > *:nth-child(6) { opacity:1; transform:none; transition-delay:0.55s; }
+
+    .ticker-wrap {
+      width: 100%;
+      overflow: hidden;
+      background: var(--grad);
+      padding: 13px 0;
+      position: relative;
+      z-index: 6;
+    }
+
+    .ticker-track { display: flex; animation: tickerScroll 40s linear infinite; width: max-content; }
+    .ticker-track:hover { animation-play-state: paused; }
+
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 0 3.5rem;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      white-space: nowrap;
+    }
+
+    .ticker-item .star { opacity: 0.5; }
+
+    @keyframes tickerScroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    #home.page { padding: 0; padding-bottom: 6rem; }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0 4rem;
+      overflow: hidden;
+      background: var(--bg-color);
+    }
+
+    .hero-video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(240,250,251,0.97) 0%, rgba(240,250,251,0.55) 70%, rgba(198,235,239,0.3) 100%);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .hero-orb { position: absolute; border-radius: 50%; pointer-events: none; z-index: 3; filter: blur(70px); }
+
+    .hero-orb-1 {
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(99,201,211,0.45), transparent 70%);
+      top: 10%; right: 15%;
+      animation: orbDrift1 9s ease-in-out infinite;
+    }
+
+    .hero-orb-2 {
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(122,206,123,0.4), transparent 70%);
+      bottom: 15%; right: 28%;
+      animation: orbDrift2 11s ease-in-out infinite;
+    }
+
+    .hero-orb-3 {
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(99,201,211,0.35), transparent 70%);
+      top: 55%; right: 5%;
+      animation: orbDrift3 7s ease-in-out infinite;
+    }
+
+    @keyframes orbDrift1 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-30px, -20px) scale(1.08); } }
+    @keyframes orbDrift2 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(25px, 15px) scale(0.92); } }
+    @keyframes orbDrift3 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-15px, -25px); } }
+
+    .hero-content { position: relative; max-width: 900px; z-index: 5; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 22px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 2rem;
+      color: var(--brand-blue);
+      box-shadow: 0 4px 20px var(--glow-blue);
+      backdrop-filter: blur(10px);
+    }
+
+    .dot {
+      width: 12px; height: 12px;
+      background: var(--grad);
+      border-radius: 50%;
+      animation: pulsing 2s infinite cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    @keyframes pulsing {
+      0%  { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(99,201,211,0.5); }
+      70% { transform: scale(1);    box-shadow: 0 0 0 12px rgba(99,201,211,0); }
+      100%{ transform: scale(0.95); box-shadow: 0 0 0 0 rgba(99,201,211,0); }
+    }
+
+    .hero h1 { font-size: 9rem; line-height: 0.9; margin-bottom: 2rem; color: var(--text-main); font-weight: 900; }
+
+    .hero h1 .hero-accent {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 30px rgba(99,201,211,0.5));
+    }
+
+    .hero p.sub { font-size: 1.45rem; color: var(--text-dim); margin-bottom: 3.5rem; max-width: 800px; font-weight: 400; line-height: 1.65; }
+    .hero-ctas { display: flex; gap: 1.5rem; }
+
+    .hero-stats { display: flex; gap: 3rem; margin-bottom: 3rem; }
+    .hero-stat-item { text-align: left; }
+
+    .hero-stat-num {
+      font-family: 'Norwester', 'Poppins', sans-serif;
+      font-size: 2.8rem;
+      line-height: 1;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-stat-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-dim); font-weight: 600; }
+
+    .home-cards { margin-top: -5rem; position: relative; z-index: 10; padding: 0 20px; }
+
+    .home-card-box {
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 15px 40px rgba(99,201,211,0.08);
+      border: 1px solid var(--glass-border);
+      border-top: 5px solid var(--brand-blue);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .home-card-box:hover { transform: translateY(-6px); box-shadow: 0 25px 50px rgba(99,201,211,0.15); }
+    .home-card-box h3 { font-size: 2.2rem; margin-bottom: 1rem; color: var(--text-main); }
+    .home-card-box p { color: var(--text-dim); font-size: 1.1rem; }
+
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 15px; margin-top: 6rem; }
+
+    .gallery-grid img {
+      width: 100%; height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border: 3px solid white;
+      cursor: pointer;
+    }
+
+    .gallery-grid img:hover { transform: scale(1.03) translateY(-4px); box-shadow: 0 20px 40px rgba(99,201,211,0.25); }
+
+    .car-display {
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 50px;
+      margin-bottom: 6rem;
+      box-shadow: 0 10px 40px rgba(99,201,211,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .car-display::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--grad); }
+
+    .car-stats-header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+      border-bottom: 2px dashed rgba(0,0,0,0.08);
+      padding-bottom: 3rem;
+    }
+
+    .car-stat { text-align: center; padding: 20px; flex: 1; }
+
+    .highlight-box {
+      border: 2px solid transparent;
+      background: linear-gradient(white, white) padding-box, var(--grad) border-box;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px var(--glow-blue);
+    }
+
+    .car-stat h3 {
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .car-stat span { color: var(--text-dim); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+
+    .car-title { font-size: 4rem; letter-spacing: 2px; margin-bottom: 2.5rem; color: var(--text-main); }
+    .car-image-box { text-align: center; }
+
+    .car-image-box img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 16px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .car-image-box img:hover { transform: scale(1.02) translateY(-4px); box-shadow: 0 35px 70px rgba(99,201,211,0.2); }
+
+    .card-hover {
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 35px 30px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-hover::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--grad); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px var(--glow-blue); border-color: var(--brand-blue); }
+
+    .icon-header { font-size: 2.5rem; margin-bottom: 1.2rem; }
+
+    .stats-strip {
+      background: var(--grad);
+      border-radius: 20px;
+      padding: 3.5rem 4rem;
+      margin: 4rem 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+      box-shadow: 0 20px 50px var(--glow-blue);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-item { position: relative; z-index: 1; }
+    .stat-num { font-family: 'Norwester', 'Poppins', sans-serif; font-size: 3.5rem; color: #fff; line-height: 1; margin-bottom: 8px; letter-spacing: 2px; }
+    .stat-label { color: rgba(255,255,255,0.85); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; }
+
+    .timeline-v2 {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 2rem 0 4rem;
+    }
+
+    .timeline-v2::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: var(--grad);
+      transform: translateX(-50%);
+      z-index: 1;
+      opacity: 0.4;
+      border-radius: 2px;
+    }
+
+    .tl-row { display: flex; width: 100%; z-index: 2; position: relative; }
+    .tl-side { flex: 1; padding: 0 40px; display: flex; flex-direction: column; justify-content: center; }
+    .left-side { text-align: right; align-items: flex-end; }
+    .right-side { text-align: left; align-items: flex-start; }
+    .tl-center { width: 40px; display: flex; justify-content: center; align-items: center; flex-shrink: 0; }
+
+    .tl-dot {
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: var(--grad);
+      box-shadow: 0 0 15px var(--glow-blue), 0 0 30px rgba(99,201,211,0.2);
+      position: relative;
+      z-index: 3;
+      transition: all 0.3s ease;
+      border: 3px solid var(--bg-color);
+    }
+
+    .tl-row:hover .tl-dot { transform: scale(1.4); box-shadow: 0 0 25px var(--glow-blue), 0 0 50px rgba(99,201,211,0.4); }
+
+    .tl-box {
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(99,201,211,0.08);
+      text-align: left;
+      max-width: 420px;
+      border: 1px solid var(--glass-border);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tl-box::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad); opacity: 0; transition: opacity 0.3s ease; }
+    .tl-box:hover { transform: translateY(-7px); box-shadow: 0 25px 50px rgba(99,201,211,0.2); border-color: var(--brand-blue); }
+    .tl-box:hover::before { opacity: 1; }
+
+    .tl-img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-top: 20px; transition: all 0.4s ease; border: 2px solid var(--border); }
+    .tl-box:hover .tl-img { border-color: var(--brand-blue); filter: brightness(1.05); }
+    .left-side .tl-box { text-align: left; }
+
+    .tl-label {
+      font-size: 2rem;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.2;
+    }
+
+    .tl-date { font-size: 1.2rem; color: var(--brand-blue); opacity: 0.7; font-family: 'Poppins', sans-serif; margin-top: 5px; }
+
+    .tl-box h4 {
+      font-size: 1.8rem;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.8rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+    }
+
+    .tl-box p { color: var(--text-dim); font-size: 1.1rem; }
+
+    .achievement-card {
+      padding: 3rem 2.5rem;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .achievement-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--grad); }
+    .achievement-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px var(--glow-blue); }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 18px;
+      background: linear-gradient(135deg, rgba(99,201,211,0.12), rgba(122,206,123,0.12));
+      color: var(--brand-blue);
+      border: 1px solid rgba(99,201,211,0.3);
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+    }
+
+    .achievement-card h3 { font-size: 2rem; line-height: 1.2; color: var(--text-main); }
+
+    .team-card {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      border: 1px solid var(--glass-border);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad); }
+    .team-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px var(--glow-blue); }
+
+    .avatar-wrapper {
+      width: 180px; height: 180px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      padding: 4px;
+      background: var(--grad);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 15px 40px var(--glow-blue);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .avatar-inner {
+      width: 100%; height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--brand-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar-inner img { width: 100%; height: 100%; object-fit: cover; }
+
+    .team-card:hover .avatar-wrapper { transform: scale(1.06); box-shadow: 0 20px 50px var(--glow-green); }
+    .team-card h3 { font-size: 2.8rem; margin-bottom: 0; color: var(--text-main); }
+
+    .team-card .role {
+      font-size: 0.85rem;
+      font-weight: 700;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1.5rem;
+    }
+
+    .team-card p { color: var(--text-dim); font-size: 1rem; }
+
+    .sponsor-hero {
+      text-align: center;
+      padding: 5rem 3rem;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(99,201,211,0.08);
+      margin-bottom: 4rem;
+      border: 1px solid var(--glass-border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sponsor-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: var(--grad); }
+    .sponsor-hero h3 { font-size: 4rem; margin-bottom: 1.5rem; color: var(--text-main); }
+    .sponsor-hero p { color: var(--text-dim); font-size: 1.15rem; max-width: 800px; margin: 0 auto 2rem; }
+
+    .tier-card {
+      display: flex;
+      flex-direction: column;
+      padding: 4rem 3rem;
+      text-align: center;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      border: 1px solid var(--glass-border);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .tier-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 6px; }
+    .tier-card:hover { transform: translateY(-8px); }
+    .tier-card h3 { font-size: 3rem; margin-bottom: 1rem; }
+
+    .gold::before { background: linear-gradient(90deg, #FFD700, #FFF0A0, #FFD700); }
+    .gold { box-shadow: 0 10px 30px rgba(255,215,0,0.12); }
+    .gold:hover { box-shadow: 0 25px 50px rgba(255,215,0,0.25); }
+    .gold h3 { color: #D4AC0D; }
+
+    .silver::before { background: linear-gradient(90deg, #8FA8BE, #C8D8E8, #8FA8BE); }
+    .silver { box-shadow: 0 10px 30px rgba(160,178,198,0.12); }
+    .silver:hover { box-shadow: 0 25px 50px rgba(160,178,198,0.25); }
+    .silver h3 { color: #7A90A4; }
+
+    .bronze::before { background: linear-gradient(90deg, #CD7F32, #E8A060, #CD7F32); }
+    .bronze { box-shadow: 0 10px 30px rgba(205,127,50,0.12); }
+    .bronze:hover { box-shadow: 0 25px 50px rgba(205,127,50,0.25); }
+    .bronze h3 { color: #A0621E; }
+
+    .tier-card .tier-sub { color: var(--text-main); font-weight: 700; margin-bottom: 2.5rem; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+    .tier-card ul { list-style: none; color: var(--text-dim); margin-bottom: 3rem; text-align: left; }
+    .tier-card ul li { margin-bottom: 1rem; padding-left: 30px; position: relative; }
+
+    .tier-card ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .tier-card .btn { margin-top: auto; width: 100%; }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      padding: 2rem;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+
+    .social-link:hover { transform: translateX(12px); box-shadow: 0 10px 30px var(--glow-blue); border-color: var(--brand-blue); }
+    .social-icon { width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+    .social-icon img { width: 100%; height: 100%; object-fit: contain; border-radius: 8px; }
+    .social-info h4 { font-size: 2rem; margin-bottom: 2px; }
+    .social-info p { color: var(--brand-teal); font-weight: 600; }
+
+    .school-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem;
+      background: var(--grad);
+      border-radius: 20px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 50px var(--glow-blue);
+    }
+
+    .school-card h3 { font-size: 3.5rem; margin-bottom: 2.5rem; color: #fff; position: relative; }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.18);
+      padding-bottom: 0.8rem;
+      position: relative;
+    }
+
+    .info-row .lbl { color: rgba(255,255,255,0.8); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; }
+    .info-row .val { font-weight: 700; text-align: right; font-size: 1.1rem; }
+
+    .news-card {
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 20px;
+      padding: 0;
+      border: 1px solid var(--glass-border);
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px var(--glow-blue); border-color: var(--brand-blue); }
+    .news-img { width: 100%; height: 240px; object-fit: cover; transition: transform 0.5s ease; }
+    .news-card:hover .news-img { transform: scale(1.06); }
+    .news-content { padding: 30px; position: relative; z-index: 2; background: var(--glass); }
+
+    .news-date {
+      font-size: 0.95rem;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .news-title { font-size: 1.8rem; color: var(--text-main); margin-bottom: 15px; font-family: 'Norwester', 'Poppins', sans-serif; letter-spacing: 1px; line-height: 1.2; }
+    .news-desc { color: var(--text-dim); font-size: 1.05rem; }
+
+    footer {
+      background: var(--surface);
+      padding: 3rem 4rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 4rem;
+      position: relative;
+    }
+
+    footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad); }
+
+    .foot-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Norwester', 'Northwester', 'Poppins', sans-serif;
+      font-weight: normal;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+
+    .foot-brand-text {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .foot-center { color: var(--text-dim); font-size: 0.95rem; }
+    .foot-social a { color: var(--text-dim); font-size: 1.5rem; margin-left: 1.5rem; font-weight: 700; transition: color 0.3s ease; }
+    .foot-social a:hover { color: var(--brand-blue); }
+    .foot-social-icon { width: 24px; height: 24px; object-fit: contain; vertical-align: middle; border-radius: 4px; transition: transform 0.3s ease; }
+    .foot-social a:hover .foot-social-icon { transform: scale(1.2) rotate(5deg); }
+
+    .modal-backdrop {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .modal-backdrop.open { opacity: 1; visibility: visible; }
+
+    .modal-content {
+      background: var(--surface);
+      width: 100%;
+      max-width: 1100px;
+      max-height: 90vh;
+      border-radius: 20px;
+      overflow-y: auto;
+      position: relative;
+      padding: 4rem;
+      transform: scale(0.94) translateY(20px);
+      transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+    }
+
+    .modal-backdrop.open .modal-content { transform: scale(1) translateY(0); }
+
+    .modal-close { position: absolute; top: 25px; right: 30px; font-size: 2.5rem; cursor: pointer; color: var(--text-dim); transition: all 0.2s ease; line-height: 1; font-weight: 300; }
+    .modal-close:hover { color: var(--brand-blue); transform: rotate(90deg); }
+
+    .modal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 2rem; }
+    .modal-grid img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+    .modal-grid img:hover { transform: scale(1.03); }
+
+    @keyframes bubbleFloat1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+    @keyframes bubbleFloat2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    @keyframes bubbleFloat3 { 0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(-6px) rotate(2deg)} }
+
+    .bubble-cluster-wrap { position: relative; width: 100%; max-width: 700px; height: 420px; margin: 3rem auto; cursor: pointer; }
+
+    .bubble-cluster-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--brand-light) 0%, rgba(122,206,123,0.15) 50%, rgba(99,201,211,0.1) 100%);
+      border-radius: 52% 48% 55% 45% / 48% 55% 45% 52%;
+      border: 2px solid var(--border);
+      transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+      box-shadow: 0 20px 60px var(--glow-blue);
+    }
+
+    .bubble-cluster-wrap:hover .bubble-cluster-bg {
+      transform: scale(1.03);
+      box-shadow: 0 30px 80px rgba(99,201,211,0.3);
+      border-color: var(--brand-blue);
+      border-radius: 48% 52% 45% 55% / 52% 48% 55% 45%;
+    }
+
+    .bubble-photo {
+      position: absolute;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #fff;
+      box-shadow: 0 10px 30px rgba(99,201,211,0.2);
+      transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+      z-index: 2;
+    }
+
+    .bubble-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .bubble-photo:hover img { transform: scale(1.12); }
+
+    .bubble-photo:nth-child(2) { animation: bubbleFloat1 4s ease-in-out infinite; }
+    .bubble-photo:nth-child(3) { animation: bubbleFloat2 5s ease-in-out infinite 0.5s; }
+    .bubble-photo:nth-child(4) { animation: bubbleFloat3 4.5s ease-in-out infinite 1s; }
+    .bubble-photo:nth-child(5) { animation: bubbleFloat1 5.5s ease-in-out infinite 0.3s; }
+    .bubble-photo:nth-child(6) { animation: bubbleFloat2 4s ease-in-out infinite 0.8s; }
+
+    .bubble-label {
+      position: absolute;
+      bottom: 35px; right: 50px;
+      z-index: 3;
+      font-family: 'Norwester', 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      line-height: 1.2;
+    }
+
+    .bubble-label span {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      letter-spacing: 0;
+      font-weight: 600;
+      -webkit-text-fill-color: var(--text-dim);
+    }
+
+    .mosaic-collage {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 260px 260px;
+      gap: 10px;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 20px 60px rgba(99,201,211,0.15);
+    }
+
+    .mosaic-cell {
+      position: relative;
+      overflow: hidden;
+      background: var(--border);
+    }
+
+    .mosaic-cell img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.2,0.8,0.2,1);
+      display: block;
+    }
+
+    .mosaic-collage:hover .mosaic-cell img { transform: scale(1.06); }
+
+    .mosaic-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(99,201,211,0) 0%, rgba(0,0,0,0.18) 100%);
+      transition: background 0.4s ease;
+    }
+
+    .mosaic-collage:hover .mosaic-overlay { background: linear-gradient(135deg, rgba(99,201,211,0.1) 0%, rgba(0,0,0,0.25) 100%); }
+
+    .mosaic-hero { grid-row: span 2; }
+    .mosaic-tall { grid-row: span 2; }
+    .mosaic-wide { grid-column: span 1; }
+
+    .mosaic-cta {
+      background: var(--grad);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: filter 0.3s ease;
+    }
+
+    .mosaic-cta:hover { filter: brightness(1.08); }
+    .mosaic-cta-inner { text-align: center; }
+
+    .model-hint { text-align: center; color: var(--text-dim); font-size: 0.95rem; margin-top: 10px; font-weight: 500; letter-spacing: 0.5px; opacity: 0.7; }
+
+    .model-reset-btn {
+      position: absolute;
+      bottom: 20px; right: 20px;
+      z-index: 25;
+      padding: 10px 20px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--brand-blue);
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .model-reset-btn:hover { background: var(--grad); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 20px var(--glow-blue); border-color: transparent; }
+
+    .journey-chapters { margin-top: 2rem; }
+
+    .chapter-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 520px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .chapter-dark { background: #0a0f10; }
+    .chapter-light { background: var(--bg-color); }
+    .chapter-grad { background: linear-gradient(135deg, #63c9d3 0%, #7ace7b 100%); }
+
+    .chapter-content {
+      padding: 5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .chapter-dark .chapter-content { order: 1; }
+    .chapter-light .chapter-content { order: 2; }
+    .chapter-grad .chapter-content { order: 2; }
+
+    .chapter-dark .chapter-img-wrap { order: 2; }
+    .chapter-light .chapter-img-wrap { order: 1; }
+    .chapter-grad .chapter-img-wrap { order: 1; }
+
+    .chapter-year {
+      position: absolute;
+      top: 3rem; right: 3rem;
+      font-family: 'Norwester','Poppins',sans-serif;
+      font-size: 6rem;
+      line-height: 1;
+      opacity: 0.06;
+      letter-spacing: -2px;
+      color: #fff;
+      pointer-events: none;
+    }
+
+    .chapter-light .chapter-year { color: #000; opacity: 0.04; right: auto; left: 3rem; }
+    .chapter-grad .chapter-year { color: #fff; opacity: 0.15; right: auto; left: 3rem; }
+
+    .chapter-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--brand-blue);
+      margin-bottom: 1rem;
+    }
+
+    .chapter-dark .chapter-tag { color: rgba(99,201,211,0.8); }
+    .chapter-grad .chapter-tag { color: rgba(255,255,255,0.7); }
+
+    .chapter-title {
+      font-size: 3.8rem;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      color: var(--text-main);
+    }
+
+    .chapter-dark .chapter-title { color: #fff; }
+
+    .chapter-body {
+      font-size: 1.1rem;
+      line-height: 1.75;
+      color: var(--text-dim);
+      max-width: 480px;
+    }
+
+    .chapter-dark .chapter-body { color: rgba(255,255,255,0.65); }
+
+    .chapter-img-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .chapter-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s cubic-bezier(0.2,0.8,0.2,1);
+      filter: brightness(0.9);
+    }
+
+    .chapter-block:hover .chapter-img-wrap img { transform: scale(1.04); filter: brightness(1); }
+
+    /* Portfolios */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .portfolio-card {
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+      position: relative;
+    }
+
+    .portfolio-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--grad); }
+    .portfolio-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px var(--glow-blue); border-color: var(--brand-blue); }
+
+    .portfolio-thumb {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      background: var(--brand-light);
+    }
+
+    .portfolio-thumb-placeholder {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(99,201,211,0.1) 0%, rgba(122,206,123,0.1) 100%);
+      font-size: 3.5rem;
+    }
+
+    .portfolio-info { padding: 1.8rem 2rem 2rem; }
+    .portfolio-info h3 { font-size: 1.6rem; margin-bottom: 0.5rem; color: var(--text-main); }
+    .portfolio-info p { color: var(--text-dim); font-size: 0.95rem; margin-bottom: 1.2rem; }
+
+    .portfolio-badge {
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .badge-eng { background: rgba(99,201,211,0.15); color: var(--brand-blue); border: 1px solid rgba(99,201,211,0.3); }
+    .badge-ent { background: rgba(122,206,123,0.15); color: var(--brand-teal); border: 1px solid rgba(122,206,123,0.3); }
+    .badge-media { background: rgba(255,200,80,0.15); color: #b8860b; border: 1px solid rgba(255,200,80,0.3); }
+
+    .portfolio-coming {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, rgba(99,201,211,0.05), rgba(122,206,123,0.05));
+      border: 2px dashed var(--border);
+      border-radius: 20px;
+      margin-top: 4rem;
+      color: var(--text-dim);
+    }
+
+    /* ═══ CREATIVE INTERACTIVE ELEMENTS ═══ */
+    #cursorGlow { display: none !important; }
+
+    #speedLines { position: fixed; inset: 0; z-index: 8000; pointer-events: none; overflow: hidden; }
+    .speed-line {
+      position: absolute; height: 2px; width: 50%; left: -50%;
+      background: linear-gradient(90deg, transparent, var(--brand-blue), var(--brand-teal), transparent);
+      border-radius: 2px; opacity: 0;
+    }
+    .speed-line.fire { animation: speedStreak 0.45s cubic-bezier(0.22,1,0.36,1) forwards; }
+    @keyframes speedStreak { 0% { left: -50%; opacity: 0.7; } 100% { left: 120%; opacity: 0; } }
+
+    .page-wipe {
+      position: fixed; inset: 0; z-index: 7000; pointer-events: none;
+      background: var(--grad); transform: scaleY(0); transform-origin: top;
+    }
+    .page-wipe.wipe-in { animation: wipeIn 0.28s cubic-bezier(0.7,0,0.3,1) forwards; }
+    .page-wipe.wipe-out { animation: wipeOut 0.28s cubic-bezier(0.7,0,0.3,1) forwards; }
+    @keyframes wipeIn { from { transform: scaleY(0); transform-origin: top; } to { transform: scaleY(1); transform-origin: top; } }
+    @keyframes wipeOut { from { transform: scaleY(1); transform-origin: bottom; } to { transform: scaleY(0); transform-origin: bottom; } }
+
+    .tilt-card { transform-style: preserve-3d; will-change: transform; }
+    .glow-card { position: relative; }
+    .glow-card::after {
+      content: ''; position: absolute; inset: 0; border-radius: inherit; opacity: 0;
+      transition: opacity 0.4s; pointer-events: none; z-index: 1;
+      background: radial-gradient(400px circle at var(--glow-x, 50%) var(--glow-y, 50%), rgba(99,201,211,0.12), transparent 60%);
+    }
+    .glow-card:hover::after { opacity: 1; }
+
+    .badge { overflow: hidden; }
+    .badge::after {
+      content: ''; position: absolute; top: -50%; left: -200%; width: 80%; height: 200%;
+      background: linear-gradient(105deg, transparent 20%, rgba(255,255,255,0.25) 45%, rgba(99,201,211,0.15) 50%, rgba(255,255,255,0.25) 55%, transparent 80%);
+      transform: skewX(-20deg); animation: badgeShimmer 5s ease-in-out infinite; pointer-events: none;
+    }
+    @keyframes badgeShimmer { 0%, 100% { left: -200%; } 50% { left: 200%; } }
+
+    .click-particle { position: fixed; border-radius: 50%; pointer-events: none; z-index: 10000; }
+
+    /* ═══ 3D PHOTO CAROUSEL ═══ */
+    .carousel-scene {
+      width: 100%; height: 520px; position: relative;
+      perspective: 1200px; overflow: hidden;
+      cursor: grab; user-select: none;
+      margin-top: 1rem;
+    }
+    .carousel-scene:active { cursor: grabbing; }
+    .carousel-scene::after {
+      content: ''; position: absolute; bottom: 0; left: 5%; right: 5%; height: 120px;
+      background: linear-gradient(to top, rgba(240,250,251,0.95) 0%, transparent 100%);
+      pointer-events: none; z-index: 5;
+    }
+    .carousel-ring {
+      width: 280px; height: 380px;
+      position: absolute; top: 40px;
+      left: 50%; margin-left: -140px;
+      transform-style: preserve-3d;
+      transition: transform 0.05s linear;
+    }
+    .carousel-card {
+      position: absolute; width: 280px; height: 380px;
+      backface-visibility: hidden;
+      border-radius: 16px; overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+      transition: filter 0.4s ease, opacity 0.4s ease;
+      cursor: pointer;
+      border: 3px solid rgba(255,255,255,0.9);
+    }
+    .carousel-card img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease;
+      display: block;
+    }
+    .carousel-card:hover img { transform: scale(1.08); }
+    .carousel-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.55) 100%);
+      display: flex; align-items: flex-end; padding: 20px;
+      opacity: 0; transition: opacity 0.4s ease;
+    }
+    .carousel-card:hover .carousel-card-overlay { opacity: 1; }
+    .carousel-card-label {
+      color: #fff; font-family: 'Norwester','Poppins',sans-serif;
+      font-size: 1rem; letter-spacing: 2px;
+    }
+    .carousel-reflection {
+      position: absolute; bottom: -20px; left: 5%; right: 5%; height: 80px;
+      background: linear-gradient(to bottom, rgba(99,201,211,0.06), transparent);
+      border-radius: 50%; filter: blur(20px);
+      pointer-events: none;
+    }
+    .carousel-controls {
+      display: flex; justify-content: center; align-items: center;
+      gap: 2rem; margin-top: 1.5rem; position: relative; z-index: 10;
+    }
+    .carousel-btn {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--glass); backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all 0.3s ease;
+      font-size: 1.2rem; color: var(--text-dim);
+    }
+    .carousel-btn:hover {
+      background: var(--grad); color: #fff; border-color: transparent;
+      transform: scale(1.1); box-shadow: 0 8px 25px var(--glow-blue);
+    }
+    .carousel-counter {
+      font-family: 'Norwester','Poppins',sans-serif;
+      font-size: 1.1rem; letter-spacing: 3px; color: var(--text-dim);
+    }
+    .carousel-counter span {
+      background: var(--grad); -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; background-clip: text;
+      font-size: 1.6rem;
+    }
+    .carousel-hint {
+      text-align: center; color: var(--text-dim); font-size: 0.9rem;
+      margin-top: 0.8rem; font-weight: 500; opacity: 0.6;
+      letter-spacing: 0.5px;
+    }
+    .photo-lightbox {
+      position: fixed; inset: 0; z-index: 10000;
+      background: rgba(0,0,0,0.92); backdrop-filter: blur(20px);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden; transition: all 0.4s ease;
+      cursor: zoom-out;
+    }
+    .photo-lightbox.active { opacity: 1; visibility: visible; }
+    .photo-lightbox img {
+      max-width: 90vw; max-height: 85vh; border-radius: 12px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+      transform: scale(0.85); transition: transform 0.5s cubic-bezier(0.2,0.8,0.2,1);
+    }
+    .photo-lightbox.active img { transform: scale(1); }
+    .photo-lightbox-close {
+      position: absolute; top: 30px; right: 40px;
+      color: rgba(255,255,255,0.7); font-size: 2.5rem; cursor: pointer;
+      transition: all 0.3s; font-weight: 300; line-height: 1;
+    }
+    .photo-lightbox-close:hover { color: #fff; transform: rotate(90deg); }
+    .photo-lightbox-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 50px; height: 50px; border-radius: 50%;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      color: #fff; font-size: 1.3rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.3s; backdrop-filter: blur(10px);
+    }
+    .photo-lightbox-nav:hover { background: rgba(255,255,255,0.25); transform: translateY(-50%) scale(1.1); }
+    .photo-lightbox-prev { left: 30px; }
+    .photo-lightbox-next { right: 30px; }
+    .photo-lightbox-caption {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.6); font-size: 0.9rem; letter-spacing: 2px;
+      font-weight: 600; text-transform: uppercase;
+    }
+
+    /* ═══ PHOTO UNIVERSE ═══ */
+    .photo-orbit-wrap {
+      position: relative; width: 100%; height: 480px; margin-top: 1rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .photo-orbit-ring {
+      position: relative; width: 600px; height: 360px;
+    }
+    .photo-orbit-item {
+      position: absolute; width: 130px; height: 130px;
+      border-radius: 50% 40% 50% 40%; overflow: hidden; cursor: pointer;
+      box-shadow: 0 8px 30px rgba(99,201,211,0.18);
+      transition: all 0.5s cubic-bezier(0.2,0.8,0.2,1);
+      border: 3px solid rgba(255,255,255,0.7);
+    }
+    .photo-orbit-item:hover {
+      transform: scale(1.15) !important;
+      box-shadow: 0 15px 45px rgba(99,201,211,0.35);
+      border-color: rgba(99,201,211,0.6); z-index: 5;
+    }
+    .photo-orbit-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .photo-orbit-center {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 160px; height: 160px; border-radius: 50%;
+      background: var(--grad); display: flex; flex-direction: column;
+      align-items: center; justify-content: center; cursor: pointer;
+      box-shadow: 0 0 60px rgba(99,201,211,0.3); transition: all 0.4s;
+      animation: orbitPulse 3s ease-in-out infinite; z-index: 6;
+    }
+    .photo-orbit-center:hover { transform: translate(-50%, -50%) scale(1.1); box-shadow: 0 0 80px rgba(99,201,211,0.5); }
+    .photo-orbit-center .orbit-icon { font-size: 2rem; margin-bottom: 4px; }
+    .photo-orbit-center span {
+      font-family: 'Norwester','Poppins',sans-serif; font-size: 0.9rem;
+      color: #fff; letter-spacing: 2px;
+    }
+    .photo-orbit-center small { font-size: 0.7rem; color: rgba(255,255,255,0.7); font-weight: 600; }
+    @keyframes orbitPulse {
+      0%, 100% { box-shadow: 0 0 40px rgba(99,201,211,0.25); }
+      50% { box-shadow: 0 0 70px rgba(99,201,211,0.45); }
+    }
+
+    /* ═══ PHOTO UNIVERSE — LANDONORRIS.COM STYLE ═══ */
+    .photo-universe {
+      position: fixed; inset: 0; z-index: 9999;
+      background:
+        radial-gradient(ellipse at 20% 30%, rgba(99,201,211,0.25) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 70%, rgba(179,136,255,0.22) 0%, transparent 55%),
+        radial-gradient(ellipse at 60% 20%, rgba(255,182,120,0.18) 0%, transparent 45%),
+        linear-gradient(135deg, #06161a 0%, #0a2024 30%, #0d2b32 60%, #0a1d24 100%);
+      opacity: 0; visibility: hidden; transition: all 0.6s cubic-bezier(0.2,0.8,0.2,1);
+      overflow: hidden; cursor: grab;
+    }
+    .photo-universe.active { opacity: 1; visibility: visible; }
+    .photo-universe:active { cursor: grabbing; }
+
+    /* Vibrant liquid wave layer inside universe — landonorris vibe */
+    .pu-liquid {
+      position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      overflow: hidden;
+    }
+    .pu-liquid svg { width: 140%; height: 140%; position: absolute; top: -20%; left: -20%; opacity: 0.55; mix-blend-mode: screen; }
+
+    /* Glowing orbs */
+    .pu-blob {
+      position: fixed; border-radius: 50%; pointer-events: none; z-index: 0;
+      filter: blur(100px); opacity: 0.55;
+      animation: blobFloat 22s ease-in-out infinite alternate;
+    }
+    .pu-blob-1 { width: 560px; height: 560px; background: radial-gradient(circle, #45e89a 0%, transparent 70%); top: -120px; left: -120px; animation-delay: 0s; }
+    .pu-blob-2 { width: 480px; height: 480px; background: radial-gradient(circle, #63c9d3 0%, transparent 70%); bottom: -80px; right: -100px; animation-delay: -5s; }
+    .pu-blob-3 { width: 420px; height: 420px; background: radial-gradient(circle, #b388ff 0%, transparent 70%); top: 35%; left: 58%; animation-delay: -10s; }
+    .pu-blob-4 { width: 380px; height: 380px; background: radial-gradient(circle, #ffb678 0%, transparent 70%); top: 55%; left: 15%; animation-delay: -15s; }
+    @keyframes blobFloat {
+      0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+      33%  { transform: translate(80px, -60px) scale(1.2) rotate(8deg); }
+      66%  { transform: translate(-50px, 70px) scale(0.85) rotate(-5deg); }
+      100% { transform: translate(60px, 30px) scale(1.1) rotate(4deg); }
+    }
+
+    /* Floating particle dots */
+    .pu-particle {
+      position: absolute; border-radius: 50%;
+      background: radial-gradient(circle, #fff 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+      animation: particleDrift 12s linear infinite;
+      opacity: 0.6;
+    }
+    @keyframes particleDrift {
+      0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+      10% { opacity: 0.6; }
+      90% { opacity: 0.6; }
+      100% { transform: translateY(-10vh) translateX(40px); opacity: 0; }
+    }
+
+    .photo-universe-inner {
+      position: absolute; transform-origin: center center;
+      transition: transform 0.08s linear; z-index: 2;
+      top: 50%; left: 50%;
+    }
+    .photo-universe-inner .pu-img {
+      position: absolute; overflow: hidden; cursor: pointer;
+      transition: opacity 0.7s cubic-bezier(0.2,0.8,0.2,1), transform 0.7s cubic-bezier(0.2,0.8,0.2,1), box-shadow 0.4s ease, filter 0.5s ease;
+      opacity: 0; transform: scale(0.6);
+      border: 3px solid rgba(255,255,255,0.15);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+      border-radius: 18px;
+      filter: blur(6px);
+    }
+    .photo-universe-inner .pu-img.revealed {
+      opacity: 1; transform: scale(1);
+      border-color: rgba(255,255,255,0.45);
+      box-shadow: 0 18px 50px rgba(99,201,211,0.3), 0 0 40px rgba(99,201,211,0.12);
+      filter: blur(0);
+    }
+    .photo-universe-inner .pu-img.ghost {
+      opacity: 0.22; transform: scale(0.85);
+      filter: blur(3px) saturate(0.7);
+      border-color: rgba(99,201,211,0.25);
+    }
+    .photo-universe-inner .pu-img:hover {
+      box-shadow: 0 24px 70px rgba(99,201,211,0.55), 0 0 60px rgba(122,206,123,0.25); z-index: 10;
+      border-color: rgba(99,201,211,0.8); transform: scale(1.08) !important;
+      filter: blur(0) !important; opacity: 1 !important;
+    }
+    .photo-universe-inner .pu-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .pu-close {
+      position: fixed; top: 25px; right: 35px; z-index: 10001;
+      width: 52px; height: 52px; border-radius: 50%;
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+      color: #fff; font-size: 1.6rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      backdrop-filter: blur(12px); transition: all 0.3s;
+    }
+    .pu-close:hover { background: rgba(255,255,255,0.25); transform: rotate(90deg); border-color: var(--brand-blue); }
+
+    .pu-zoom-controls {
+      position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
+      z-index: 10001; display: flex; gap: 12px; align-items: center;
+      background: rgba(255,255,255,0.1); backdrop-filter: blur(14px);
+      padding: 10px 22px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.18);
+      color: #fff;
+    }
+    .pu-zoom-btn {
+      width: 36px; height: 36px; border-radius: 50%; border: none;
+      background: rgba(255,255,255,0.15); color: #fff; font-size: 1.2rem;
+      cursor: pointer; transition: all 0.3s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .pu-zoom-btn:hover { background: var(--grad); transform: scale(1.08); }
+    .pu-zoom-label { color: rgba(255,255,255,0.85); font-size: 0.8rem; letter-spacing: 1.5px; font-weight: 700; }
+
+    .pu-hint {
+      position: fixed; top: 30px; left: 50%; transform: translateX(-50%);
+      z-index: 10001; color: rgba(255,255,255,0.9); font-size: 0.85rem;
+      letter-spacing: 2px; pointer-events: none; font-weight: 600;
+      background: rgba(255,255,255,0.08); padding: 10px 22px; border-radius: 50px;
+      backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.18);
+      text-transform: uppercase;
+    }
+
+    /* Title on the universe */
+    .pu-title {
+      position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      font-family: 'Norwester','Poppins',sans-serif;
+      font-size: 18vw; color: rgba(255,255,255,0.04); letter-spacing: 2vw;
+      pointer-events: none; z-index: 1; line-height: 0.9;
+      font-weight: 900;
+    }
+
+    /* ═══ PORTFOLIO VIEWER ═══ */
+    .pf-viewer {
+      position: fixed; inset: 0; z-index: 10000;
+      background: rgba(0,0,0,0.93); backdrop-filter: blur(20px);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden; transition: all 0.4s ease;
+    }
+    .pf-viewer.active { opacity: 1; visibility: visible; }
+    .pf-viewer img {
+      max-width: 88vw; max-height: 82vh; border-radius: 10px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      transform: scale(0.9); transition: transform 0.4s cubic-bezier(0.2,0.8,0.2,1);
+      object-fit: contain;
+    }
+    .pf-viewer.active img { transform: scale(1); }
+    .pf-close {
+      position: absolute; top: 25px; right: 35px;
+      color: rgba(255,255,255,0.7); font-size: 2.5rem; cursor: pointer;
+      transition: all 0.3s; font-weight: 300; line-height: 1; z-index: 2;
+    }
+    .pf-close:hover { color: #fff; transform: rotate(90deg); }
+    .pf-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 50px; height: 50px; border-radius: 50%;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      color: #fff; font-size: 1.3rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.3s; backdrop-filter: blur(10px); z-index: 2;
+    }
+    .pf-nav:hover { background: rgba(255,255,255,0.25); transform: translateY(-50%) scale(1.1); }
+    .pf-nav.prev { left: 30px; }
+    .pf-nav.next { right: 30px; }
+    .pf-counter {
+      position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.5); font-size: 0.95rem; letter-spacing: 3px;
+      font-weight: 600; font-family: 'Norwester','Poppins',sans-serif;
+    }
+    .pf-title {
+      position: absolute; top: 30px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.6); font-size: 1rem; letter-spacing: 3px;
+      font-weight: 700; text-transform: uppercase; font-family: 'Norwester','Poppins',sans-serif;
+    }
+    #pfImage.pf-blur { filter: blur(18px) brightness(0.7); }
+    .pf-lock {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      color: #fff; text-align: center; z-index: 3; pointer-events: none;
+      display: none; padding: 1.8rem 2.4rem; border-radius: 16px;
+      background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px); max-width: 80vw;
+    }
+    .pf-lock.show { display: block; }
+    .pf-lock .lock-icon { font-size: 2.2rem; margin-bottom: 0.6rem; }
+    .pf-lock h4 { font-size: 1.3rem; letter-spacing: 2px; margin-bottom: 0.4rem; font-family: 'Norwester','Poppins',sans-serif; }
+    .pf-lock p { color: rgba(255,255,255,0.75); font-size: 0.95rem; line-height: 1.5; }
+    .portfolio-card { cursor: pointer; transition: all 0.4s ease; }
+    .portfolio-card:hover { transform: translateY(-6px); box-shadow: 0 15px 40px rgba(99,201,211,0.15); }
+
+    /* ═══ SPONSOR TIERS (4 official tiers) ═══ */
+    .sponsor-tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 2rem; }
+    .stier-card {
+      background: var(--glass); backdrop-filter: blur(12px);
+      border-radius: 20px; padding: 2.2rem 2rem; position: relative;
+      border: 1px solid var(--glass-border); overflow: hidden;
+      transition: all 0.4s ease;
+    }
+    .stier-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
+    .stier-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    }
+    .stier-card.tier-title::before { background: linear-gradient(90deg, #63c9d3, #45e89a, #63c9d3); }
+    .stier-card.tier-diamond::before { background: linear-gradient(90deg, #b388ff, #7c4dff, #b388ff); }
+    .stier-card.tier-gold::before { background: linear-gradient(90deg, #FFD700, #FFA000, #FFD700); }
+    .stier-card.tier-silver::before { background: linear-gradient(90deg, #b0bec5, #78909c, #b0bec5); }
+    .stier-badge {
+      display: inline-block; padding: 4px 16px; border-radius: 20px;
+      font-size: 0.75rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .tier-title .stier-badge { background: linear-gradient(135deg, #63c9d3, #45e89a); color: #fff; }
+    .tier-diamond .stier-badge { background: linear-gradient(135deg, #b388ff, #7c4dff); color: #fff; }
+    .tier-gold .stier-badge { background: linear-gradient(135deg, #FFD700, #FFA000); color: #333; }
+    .tier-silver .stier-badge { background: linear-gradient(135deg, #b0bec5, #78909c); color: #fff; }
+    .stier-amount {
+      font-family: 'Norwester','Poppins',sans-serif; font-size: 2rem;
+      letter-spacing: 1px; margin-bottom: 8px;
+    }
+    .tier-title .stier-amount { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .tier-diamond .stier-amount { color: #7c4dff; }
+    .tier-gold .stier-amount { color: #FFA000; }
+    .tier-silver .stier-amount { color: #78909c; }
+    .stier-perks { list-style: none; padding: 0; margin: 0; }
+    .stier-perks li {
+      padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04);
+      font-size: 0.92rem; color: var(--text-dim); display: flex; align-items: center; gap: 8px;
+    }
+    .stier-perks li::before { content: '✓'; color: var(--brand-blue); font-weight: 700; font-size: 0.85rem; }
+    .stier-perks li:last-child { border-bottom: none; }
+
+    /* Sponsor Logo Grid — Professional unified card look */
+    .sponsor-logos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem; padding: 1rem 0 3rem;
+    }
+    .sponsor-logo-item {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 1rem;
+      min-height: 220px;
+      padding: 2rem 1.5rem;
+      transition: all 0.4s cubic-bezier(0.2,0.8,0.2,1);
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid rgba(99,201,211,0.18);
+      box-shadow: 0 6px 20px rgba(99,201,211,0.08);
+      position: relative; overflow: hidden;
+    }
+    .sponsor-logo-item::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: var(--grad); opacity: 0.7;
+    }
+    .sponsor-logo-item:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 22px 45px rgba(99,201,211,0.25);
+      border-color: var(--brand-blue);
+    }
+    .sponsor-logo-item .logo-frame {
+      width: 100%; height: 110px;
+      display: flex; align-items: center; justify-content: center;
+      background: #fff; border-radius: 12px;
+      padding: 8px;
+    }
+    .sponsor-logo-item img {
+      max-width: 100%; max-height: 100%; width: auto; height: auto;
+      object-fit: contain;
+      transition: transform 0.4s ease;
+      filter: none;
+    }
+    .sponsor-logo-item:hover img { transform: scale(1.1); }
+    .sponsor-logo-item span {
+      font-size: 0.9rem; color: var(--text-main); font-weight: 800;
+      text-align: center; letter-spacing: 1px; text-transform: uppercase;
+    }
+
+    /* Donate Section — Dedicated, highly visible */
+    .donate-banner {
+      background:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.12) 0%, transparent 50%),
+        linear-gradient(135deg, #63c9d3 0%, #45e89a 55%, #b388ff 120%);
+      border-radius: 28px;
+      padding: 3.5rem 3rem;
+      text-align: center;
+      margin: 4rem 0 0;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(99,201,211,0.3);
+    }
+    .donate-banner::before {
+      content: ''; position: absolute;
+      top: -50%; left: -30%; width: 160%; height: 200%;
+      background: radial-gradient(ellipse, rgba(255,255,255,0.18) 0%, transparent 60%);
+      animation: donateShimmer 8s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes donateShimmer {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      50%      { transform: translate(8%, -5%) rotate(6deg); }
+    }
+    .donate-banner .donate-label {
+      display: inline-block; padding: 6px 20px;
+      background: rgba(255,255,255,0.25); color: #fff;
+      border-radius: 50px; font-weight: 800;
+      letter-spacing: 2px; font-size: 0.8rem; text-transform: uppercase;
+      margin-bottom: 1rem; backdrop-filter: blur(8px);
+    }
+    .donate-banner h3 {
+      color: #fff; font-size: 2.8rem; margin-bottom: 0.8rem;
+      font-family: 'Norwester','Poppins',sans-serif; letter-spacing: 2px;
+      line-height: 1.1; position: relative;
+    }
+    .donate-banner p {
+      color: rgba(255,255,255,0.95); margin: 0 auto 2rem;
+      font-size: 1.1rem; max-width: 720px; line-height: 1.6;
+      position: relative;
+    }
+    .donate-banner .donate-cta-row {
+      display: flex; justify-content: center; gap: 1rem;
+      flex-wrap: wrap; position: relative;
+    }
+    .donate-banner .btn {
+      background: #fff !important; color: #0d5963 !important; font-weight: 800 !important;
+      padding: 18px 38px !important; font-size: 1.05rem !important;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+    }
+    .donate-banner .btn:hover {
+      transform: translateY(-4px) !important;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.28) !important;
+    }
+    .donate-banner .btn.btn-ghost {
+      background: transparent !important; color: #fff !important;
+      border: 2px solid rgba(255,255,255,0.6) !important;
+      box-shadow: none !important;
+    }
+    .donate-banner .btn.btn-ghost:hover {
+      background: rgba(255,255,255,0.15) !important;
+      border-color: #fff !important;
+    }
+
+    /* Sponsorship Package Hero — FRONT AND CENTER */
+    .sponsor-pkg-hero {
+      background: linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(198,235,239,0.65) 100%);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--glass-border);
+      border-radius: 28px;
+      padding: 3rem 3rem 2.5rem;
+      margin-bottom: 4rem;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.2,0.8,0.2,1);
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(99,201,211,0.18);
+    }
+    .sponsor-pkg-hero::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 6px;
+      background: var(--grad);
+    }
+    .sponsor-pkg-hero::after {
+      content: '✨ CLICK TO VIEW FULL PACKAGE';
+      position: absolute; top: 24px; right: 28px;
+      background: var(--grad); color: #fff;
+      padding: 8px 18px; border-radius: 50px;
+      font-size: 0.75rem; font-weight: 800; letter-spacing: 2px;
+      box-shadow: 0 6px 18px var(--glow-blue);
+      z-index: 3;
+    }
+    .sponsor-pkg-hero:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 80px rgba(99,201,211,0.28);
+      border-color: var(--brand-blue);
+    }
+    .sponsor-pkg-hero .pkg-hero-label {
+      display: inline-flex; align-items: center; gap: 12px;
+      padding: 8px 20px; background: rgba(255,255,255,0.9);
+      border: 1px solid var(--border); border-radius: 50px;
+      font-size: 0.85rem; font-weight: 800; color: var(--brand-blue);
+      letter-spacing: 1.5px; margin-bottom: 1rem; text-transform: uppercase;
+    }
+    .sponsor-pkg-hero h3 {
+      font-size: 3.2rem; margin-bottom: 0.6rem; text-align: left;
+      font-family: 'Norwester','Poppins',sans-serif; letter-spacing: 2px;
+      line-height: 1;
+    }
+    .sponsor-pkg-hero p {
+      color: var(--text-dim); text-align: left; font-size: 1.1rem;
+      max-width: 720px; margin-bottom: 2rem; line-height: 1.6;
+    }
+    .sponsor-pkg-hero img {
+      width: 100%; max-height: 720px; object-fit: contain;
+      border-radius: 18px;
+      box-shadow: 0 16px 50px rgba(0,0,0,0.12);
+      background: #fff;
+      margin-top: 0.5rem;
+      transition: transform 0.5s ease;
+    }
+    .sponsor-pkg-hero:hover img { transform: scale(1.01); }
+
+    @media (max-width: 768px) {
+      .sponsor-pkg-hero { padding: 2rem 1.5rem; }
+      .sponsor-pkg-hero::after { display: none; }
+      .sponsor-pkg-hero h3 { font-size: 2rem; }
+    }
+
+    /* Engineering Portfolio Widget */
+    .eng-portfolio-widget {
+      background: linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(198,235,239,0.55) 100%);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 2.5rem 2.5rem 2rem;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.2,0.8,0.2,1);
+      box-shadow: 0 15px 40px rgba(99,201,211,0.12);
+      position: relative; overflow: hidden;
+    }
+    .eng-portfolio-widget::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:4px; background:var(--grad);
+    }
+    .eng-portfolio-widget:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 70px rgba(99,201,211,0.25);
+      border-color: var(--brand-blue);
+    }
+    .epw-header {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;
+    }
+    .epw-cta {
+      padding: 14px 26px; border-radius: 50px;
+      background: var(--grad); color: #fff;
+      font-weight: 800; letter-spacing: 1.5px; font-size: 0.95rem;
+      text-transform: uppercase; box-shadow: 0 8px 24px var(--glow-blue);
+      white-space: nowrap;
+    }
+    .eng-portfolio-widget:hover .epw-cta {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px var(--glow-blue);
+    }
+    .epw-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    }
+    .epw-grid img {
+      width: 100%; aspect-ratio: 3/4; object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      border: 2px solid #fff;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      background: #fff;
+    }
+    .epw-grid img:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 18px 40px rgba(99,201,211,0.25);
+    }
+    @media (max-width: 768px) {
+      .epw-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ═══ LANDONORRIS-STYLE VIBRANT WAVES + JELLYFISH ═══ */
+    /* ═══ INTERACTIVE TOPOGRAPHIC LINES (cursor-reactive) ═══ */
+    .topo-lines {
+      position: fixed; inset: 0; width: 100%; height: 100%;
+      pointer-events: none; z-index: 0; opacity: 1;
+      overflow: hidden;
+    }
+    .topo-lines svg { width: 100%; height: 100%; display: block; }
+    .topo-layer {
+      transition: transform 0.8s cubic-bezier(0.2,0.8,0.2,1);
+      will-change: transform;
+      transform-origin: 50% 50%;
+    }
+    .topo-layer path {
+      fill: none;
+      stroke: url(#topoGrad);
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      opacity: 1;
+    }
+    .topo-layer.l-back path { opacity: 0.3;  stroke-width: 1.1; }
+    .topo-layer.l-mid path  { opacity: 0.45; stroke-width: 1.4; }
+    .topo-layer.l-front path{ opacity: 0.65; stroke-width: 1.8; }
+
+    .main-bg-blob {
+      position: fixed; border-radius: 50%; pointer-events: none;
+      filter: blur(110px); opacity: 0.38; z-index: -2;
+      will-change: transform;
+    }
+    .main-bg-blob-1 { width: 620px; height: 620px; background: radial-gradient(circle, #63c9d3 0%, transparent 70%); top: -160px; right: -160px; animation: bgDrift1 22s ease-in-out infinite alternate; }
+    .main-bg-blob-2 { width: 540px; height: 540px; background: radial-gradient(circle, #45e89a 0%, transparent 70%); bottom: 10%; left: -180px; animation: bgDrift2 26s ease-in-out infinite alternate; }
+    .main-bg-blob-3 { width: 420px; height: 420px; background: radial-gradient(circle, #b388ff 0%, transparent 70%); top: 40%; right: 25%; animation: bgDrift3 30s ease-in-out infinite alternate; }
+    .main-bg-blob-4 { width: 380px; height: 380px; background: radial-gradient(circle, #ffb678 0%, transparent 70%); top: 70%; left: 35%; animation: bgDrift1 32s ease-in-out infinite alternate-reverse; }
+
+    @keyframes bgDrift1 {
+      0%   { transform: translate(0,0) scale(1); }
+      50%  { transform: translate(80px, -60px) scale(1.18); }
+      100% { transform: translate(-40px, 80px) scale(0.92); }
+    }
+    @keyframes bgDrift2 {
+      0%   { transform: translate(0,0) scale(1); }
+      50%  { transform: translate(-70px, 50px) scale(1.12); }
+      100% { transform: translate(60px, -60px) scale(0.95); }
+    }
+    @keyframes bgDrift3 {
+      0%   { transform: translate(0,0) scale(1); }
+      50%  { transform: translate(50px, 70px) scale(1.2); }
+      100% { transform: translate(-80px, -30px) scale(0.88); }
+    }
+
+    /* Flowing wave layer — like landonorris.com's liquid gradient */
+    .liquid-waves {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      overflow: hidden;
+    }
+    .liquid-wave {
+      position: absolute; left: -10%; width: 120%; height: 100%;
+      opacity: 0.5;
+      mix-blend-mode: screen;
+    }
+    .liquid-wave svg { width: 100%; height: 100%; display: block; }
+
+    /* topo-lines rules consolidated above */
+
+    /* Cursor-following blob canvas */
+    .blob-canvas {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      width: 100vw; height: 100vh;
+      filter: blur(24px) saturate(1.3);
+      opacity: 0.85;
+    }
+
+    /* Grain overlay adds that premium landonorris feel */
+    .grain-overlay {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      opacity: 0.04;
+      background-image:
+        radial-gradient(circle, #000 0.5px, transparent 0.5px),
+        radial-gradient(circle, #000 0.5px, transparent 0.5px);
+      background-size: 4px 4px, 6px 6px;
+      background-position: 0 0, 2px 3px;
+    }
+
+    /* ═══ LOGO MARQUEE ═══ */
+    .logo-marquee-wrap {
+      overflow: hidden; padding: 2rem 0; margin: 3rem 0 0;
+      border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);
+      position: relative;
+    }
+    .logo-marquee-wrap::before, .logo-marquee-wrap::after {
+      content: ''; position: absolute; top: 0; bottom: 0; width: 120px; z-index: 2;
+      pointer-events: none;
+    }
+    .logo-marquee-wrap::before { left: 0; background: linear-gradient(to right, var(--bg), transparent); }
+    .logo-marquee-wrap::after { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
+    .logo-marquee-label {
+      text-align: center; margin-bottom: 1rem;
+      font-family: 'Norwester','Poppins',sans-serif; font-size: 0.85rem;
+      letter-spacing: 4px; color: var(--text-dim); text-transform: uppercase;
+    }
+    .logo-marquee-track {
+      display: flex; align-items: center; gap: 4rem;
+      animation: marqueeScroll 30s linear infinite; width: max-content;
+    }
+    .logo-marquee-track img {
+      height: 40px; width: auto; object-fit: contain;
+      filter: grayscale(0.4) opacity(0.7); transition: all 0.3s;
+    }
+    .logo-marquee-track img:hover { filter: grayscale(0) opacity(1); transform: scale(1.15); }
+    @keyframes marqueeScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    @media (max-width: 992px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .hero { padding: 8rem 2rem 4rem; text-align: center; justify-content: center; }
+      .hero-content { margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+      .hero p.sub { text-align: center; }
+      .hero-stats { justify-content: center; }
+      .home-cards { padding: 0; }
+      .car-stats-header { flex-direction: column; gap: 20px; }
+      .car-stat { width: 100%; border-bottom: 1px solid var(--border); padding: 15px; }
+      .stats-strip { grid-template-columns: repeat(2, 1fr); }
+      .timeline-v2::after { left: 20px; }
+      .tl-row { flex-direction: column; }
+      .left-side, .right-side { text-align: left; align-items: flex-start; padding-left: 60px; padding-right: 20px; width: 100%; }
+      .tl-center { position: absolute; left: -2px; top: 0; width: 40px; height: 100%; align-items: flex-start; padding-top: 25px; }
+      .left-side .tl-box { margin-bottom: 2rem; }
+    }
+
+    @media (max-width: 900px) {
+      .chapter-block { grid-template-columns: 1fr; min-height: auto; }
+      .chapter-dark .chapter-content,
+      .chapter-light .chapter-content,
+      .chapter-grad .chapter-content { order: 2; padding: 3rem 2rem; }
+      .chapter-dark .chapter-img-wrap,
+      .chapter-light .chapter-img-wrap,
+      .chapter-grad .chapter-img-wrap { order: 1; height: 280px; }
+      .chapter-title { font-size: 2.8rem; }
+      .mosaic-collage { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .mosaic-hero { grid-row: span 1; }
+      .mosaic-tall { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 2rem; }
+      nav.scrolled { padding: 1rem 2rem; }
+      .hamburger { display: flex; }
+      .nav-links { position: fixed; top: 0; right: -100%; width: 100vw; height: 100vh; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); flex-direction: column; align-items: center; justify-content: center; transition: right 0.4s ease; z-index: 1050; gap: 2rem; }
+      .nav-links.open { right: 0; }
+      .nav-links a { font-size: 2rem; }
+      .hamburger.open div:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+      .hamburger.open div:nth-child(2) { opacity: 0; }
+      .hamburger.open div:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+      .hero h1 { font-size: 5rem; }
+      .stats-strip { grid-template-columns: repeat(2, 1fr); padding: 2.5rem 2rem; }
+      footer { flex-direction: column; gap: 2rem; text-align: center; padding: 3rem 2rem; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .section-title { font-size: 3rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Interactive Effect Layers -->
+  <div id="cursorGlow"></div>
+  <div id="speedLines"></div>
+  <div id="pageWipe" class="page-wipe"></div>
+
+  <!-- Cursor-reactive organic contour blobs (Lando Norris style) -->
+  <div class="topo-lines" id="topoLines" aria-hidden="true">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="cG1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"   stop-color="#63c9d3" stop-opacity="0.9"/>
+          <stop offset="100%" stop-color="#7ace7b" stop-opacity="0.9"/>
+        </linearGradient>
+        <linearGradient id="cG2" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#7ace7b" stop-opacity="0.85"/>
+          <stop offset="100%" stop-color="#a5b4fc" stop-opacity="0.85"/>
+        </linearGradient>
+        <linearGradient id="cG3" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0%"   stop-color="#63c9d3" stop-opacity="0.8"/>
+          <stop offset="100%" stop-color="#c084fc" stop-opacity="0.7"/>
+        </linearGradient>
+        <filter id="topoWarp" x="-15%" y="-15%" width="130%" height="130%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="3" id="topoTurb"/>
+          <feDisplacementMap in="SourceGraphic" scale="0" id="topoDisp"/>
+        </filter>
+      </defs>
+      <g filter="url(#topoWarp)" id="topoWarpGroup">
+      <g class="topo-layer l-back" data-depth="6" fill="none">
+        <path stroke="url(#cG1)" stroke-width="1.5"
+          d="M 720,30 C 1050,10 1380,90 1420,320 C 1460,550 1320,800 1020,860 C 720,920 340,850 140,650 C -60,450 40,180 280,90 C 430,35 590,45 720,30 Z">
+          <animate attributeName="d" dur="28s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+            values="M 720,30 C 1050,10 1380,90 1420,320 C 1460,550 1320,800 1020,860 C 720,920 340,850 140,650 C -60,450 40,180 280,90 C 430,35 590,45 720,30 Z;
+                    M 740,20 C 1080,5  1400,110 1430,340 C 1460,570 1300,820 980,870 C 660,920 310,840 120,630 C -70,420 50,160 300,80 C 460,28 600,32 740,20 Z;
+                    M 720,30 C 1050,10 1380,90 1420,320 C 1460,550 1320,800 1020,860 C 720,920 340,850 140,650 C -60,450 40,180 280,90 C 430,35 590,45 720,30 Z"/>
+        </path>
+        <path stroke="url(#cG2)" stroke-width="1.3"
+          d="M 180,580 C 320,500 520,510 580,640 C 640,770 520,890 340,880 C 160,870 20,760 30,650 C 40,540 80,640 180,580 Z">
+          <animate attributeName="d" dur="22s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+            values="M 180,580 C 320,500 520,510 580,640 C 640,770 520,890 340,880 C 160,870 20,760 30,650 C 40,540 80,640 180,580 Z;
+                    M 200,570 C 340,490 530,505 590,635 C 650,765 525,895 340,882 C 155,869 15,752 25,642 C 35,532 95,648 200,570 Z;
+                    M 180,580 C 320,500 520,510 580,640 C 640,770 520,890 340,880 C 160,870 20,760 30,650 C 40,540 80,640 180,580 Z"/>
+        </path>
+      </g>
+      <g class="topo-layer l-mid" data-depth="14" fill="none">
+        <path stroke="url(#cG1)" stroke-width="1.6"
+          d="M 860,80 C 1120,50 1380,160 1390,380 C 1400,600 1220,770 940,790 C 660,810 460,680 480,480 C 500,280 600,110 860,80 Z">
+          <animate attributeName="d" dur="20s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+            values="M 860,80 C 1120,50 1380,160 1390,380 C 1400,600 1220,770 940,790 C 660,810 460,680 480,480 C 500,280 600,110 860,80 Z;
+                    M 880,70 C 1140,45 1390,170 1400,395 C 1410,620 1210,780 920,798 C 630,816 440,674 462,472 C 484,270 615,98 880,70 Z;
+                    M 860,80 C 1120,50 1380,160 1390,380 C 1400,600 1220,770 940,790 C 660,810 460,680 480,480 C 500,280 600,110 860,80 Z"/>
+        </path>
+        <path stroke="url(#cG3)" stroke-width="1.4"
+          d="M 120,80 C 280,30 460,60 500,180 C 540,300 420,400 260,390 C 100,380 -20,280 10,170 C 30,80 -20,120 120,80 Z">
+          <animate attributeName="d" dur="18s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+            values="M 120,80 C 280,30 460,60 500,180 C 540,300 420,400 260,390 C 100,380 -20,280 10,170 C 30,80 -20,120 120,80 Z;
+                    M 130,70 C 295,22 470,55 508,178 C 546,301 418,408 252,395 C 86,382 -28,274 5,163 C 25,74 -15,116 130,70 Z;
+                    M 120,80 C 280,30 460,60 500,180 C 540,300 420,400 260,390 C 100,380 -20,280 10,170 C 30,80 -20,120 120,80 Z"/>
+        </path>
+      </g>
+      <g class="topo-layer l-front" data-depth="28" fill="none">
+        <path stroke="url(#cG1)" stroke-width="2"
+          d="M 720,160 C 940,130 1160,230 1160,420 C 1160,610 980,720 760,710 C 540,700 380,600 390,420 C 400,240 500,190 720,160 Z">
+          <animate attributeName="d" dur="15s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+            values="M 720,160 C 940,130 1160,230 1160,420 C 1160,610 980,720 760,710 C 540,700 380,600 390,420 C 400,240 500,190 720,160 Z;
+                    M 740,150 C 962,122 1175,240 1172,432 C 1169,624 984,730 758,718 C 532,706 370,596 382,412 C 394,228 515,180 740,150 Z;
+                    M 720,160 C 940,130 1160,230 1160,420 C 1160,610 980,720 760,710 C 540,700 380,600 390,420 C 400,240 500,190 720,160 Z"/>
+        </path>
+        <path stroke="url(#cG2)" stroke-width="1.8"
+          d="M 1100,560 C 1280,510 1460,580 1450,720 C 1440,860 1260,930 1080,900 C 900,870 800,760 840,640 C 870,540 940,600 1100,560 Z">
+          <animate attributeName="d" dur="17s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+            values="M 1100,560 C 1280,510 1460,580 1450,720 C 1440,860 1260,930 1080,900 C 900,870 800,760 840,640 C 870,540 940,600 1100,560 Z;
+                    M 1115,550 C 1295,498 1470,572 1458,715 C 1446,858 1258,934 1072,902 C 886,870 788,754 830,633 C 862,532 952,606 1115,550 Z;
+                    M 1100,560 C 1280,510 1460,580 1450,720 C 1440,860 1260,930 1080,900 C 900,870 800,760 840,640 C 870,540 940,600 1100,560 Z"/>
+        </path>
+      </g>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Landonorris-style vibrant wave + jellyfish background -->
+  <div class="grain-overlay"></div>
+  <div class="main-bg-blob main-bg-blob-1"></div>
+  <div class="main-bg-blob main-bg-blob-2"></div>
+  <div class="main-bg-blob main-bg-blob-3"></div>
+  <div class="main-bg-blob main-bg-blob-4"></div>
+
+  <div class="liquid-waves">
+    <div class="liquid-wave" style="top:0; animation: waveDrift 28s ease-in-out infinite alternate;">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="wg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#63c9d3" stop-opacity="0.55"/>
+            <stop offset="50%" stop-color="#7ace7b" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#b388ff" stop-opacity="0.3"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#wg1)" d="M0,300 C240,420 480,180 720,280 C960,380 1200,260 1440,340 L1440,800 L0,800 Z">
+          <animate attributeName="d" dur="18s" repeatCount="indefinite"
+            values="M0,300 C240,420 480,180 720,280 C960,380 1200,260 1440,340 L1440,800 L0,800 Z;
+                    M0,360 C240,240 480,380 720,330 C960,270 1200,400 1440,300 L1440,800 L0,800 Z;
+                    M0,300 C240,420 480,180 720,280 C960,380 1200,260 1440,340 L1440,800 L0,800 Z"/>
+        </path>
+      </svg>
+    </div>
+    <div class="liquid-wave" style="top:20%; animation: waveDrift 34s ease-in-out infinite alternate-reverse;">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="wg2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#45e89a" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#63c9d3" stop-opacity="0.55"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#wg2)" d="M0,500 C320,400 640,600 960,500 C1200,420 1320,560 1440,500 L1440,800 L0,800 Z">
+          <animate attributeName="d" dur="22s" repeatCount="indefinite"
+            values="M0,500 C320,400 640,600 960,500 C1200,420 1320,560 1440,500 L1440,800 L0,800 Z;
+                    M0,450 C320,580 640,400 960,560 C1200,620 1320,440 1440,520 L1440,800 L0,800 Z;
+                    M0,500 C320,400 640,600 960,500 C1200,420 1320,560 1440,500 L1440,800 L0,800 Z"/>
+        </path>
+      </svg>
+    </div>
+  </div>
+
+  <style>
+    @keyframes waveDrift {
+      0%   { transform: translate3d(0,0,0) scale(1); }
+      100% { transform: translate3d(-40px, 30px, 0) scale(1.06); }
+    }
+  </style>
+
+  <!-- Inner contour rings — nested inside the outer blobs -->
+  <div style="position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="iG1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#63c9d3" stop-opacity="0.7"/>
+          <stop offset="100%" stop-color="#7ace7b" stop-opacity="0.7"/>
+        </linearGradient>
+        <linearGradient id="iG2" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#c084fc" stop-opacity="0.65"/>
+          <stop offset="100%" stop-color="#63c9d3" stop-opacity="0.65"/>
+        </linearGradient>
+      </defs>
+      <path fill="none" stroke="url(#iG1)" stroke-width="1.4"
+        d="M 720,120 C 1000,85 1300,190 1310,390 C 1320,590 1140,750 880,760 C 620,770 430,650 445,450 C 460,250 440,155 720,120 Z">
+        <animate attributeName="d" dur="32s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+          values="M 720,120 C 1000,85 1300,190 1310,390 C 1320,590 1140,750 880,760 C 620,770 430,650 445,450 C 460,250 440,155 720,120 Z;
+                  M 700,130 C 980,92 1285,200 1295,402 C 1305,604 1122,758 858,765 C 594,772 408,648 424,446 C 440,244 422,162 700,130 Z;
+                  M 720,120 C 1000,85 1300,190 1310,390 C 1320,590 1140,750 880,760 C 620,770 430,650 445,450 C 460,250 440,155 720,120 Z"/>
+      </path>
+      <path fill="none" stroke="url(#iG1)" stroke-width="1.1"
+        d="M 730,210 C 950,182 1170,268 1170,430 C 1170,592 1010,700 810,695 C 610,690 470,595 480,440 C 490,285 510,238 730,210 Z">
+        <animate attributeName="d" dur="25s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+          values="M 730,210 C 950,182 1170,268 1170,430 C 1170,592 1010,700 810,695 C 610,690 470,595 480,440 C 490,285 510,238 730,210 Z;
+                  M 745,202 C 968,175 1182,262 1180,426 C 1178,590 1016,698 812,692 C 608,686 465,590 476,434 C 487,278 522,230 745,202 Z;
+                  M 730,210 C 950,182 1170,268 1170,430 C 1170,592 1010,700 810,695 C 610,690 470,595 480,440 C 490,285 510,238 730,210 Z"/>
+      </path>
+      <path fill="none" stroke="url(#iG2)" stroke-width="1.5"
+        d="M 1060,50 C 1250,20 1440,110 1440,280 C 1440,450 1300,560 1120,550 C 940,540 820,440 840,290 C 858,150 870,80 1060,50 Z">
+        <animate attributeName="d" dur="21s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+          values="M 1060,50 C 1250,20 1440,110 1440,280 C 1440,450 1300,560 1120,550 C 940,540 820,440 840,290 C 858,150 870,80 1060,50 Z;
+                  M 1075,42 C 1268,14 1452,106 1450,278 C 1448,450 1304,558 1122,546 C 940,534 814,432 836,282 C 858,145 882,74 1075,42 Z;
+                  M 1060,50 C 1250,20 1440,110 1440,280 C 1440,450 1300,560 1120,550 C 940,540 820,440 840,290 C 858,150 870,80 1060,50 Z"/>
+      </path>
+    </svg>
+  </div>
+
+  <!-- Interactive floating bubble field -->
+  <canvas class="blob-canvas" id="blobCanvas" aria-hidden="true"></canvas>
+
+  <nav id="navbar">
+    <a href="#" class="logo-container" data-target="home">
+      <img src="logo.png" alt="Ignite Racing Logo" class="navbar-logo" onerror="this.src=''; this.style.display='none';">
+      <div class="logo-text">IGNITE</div>
+    </a>
+    <div class="nav-links">
+      <a href="#" data-target="home" class="active">Home</a>
+      <a href="#" data-target="engineering">Engineering</a>
+      <a href="#" data-target="achievements">Awards</a>
+      <a href="#" data-target="history">Journey</a>
+      <a href="#" data-target="team">Team</a>
+      <a href="#" data-target="portfolios">Portfolios</a>
+      <a href="#" data-target="sponsors">Sponsors</a>
+      <a href="#" data-target="news" style="font-weight:700;">News</a>
+      <a href="#" data-target="contact">Contact</a>
+      <a href="https://www.gofundme.com/f/canadian-champions-but-we-cant-afford-to-go-to-worlds" target="_blank" rel="noopener noreferrer" style="background:var(--grad); color:#fff !important; padding:6px 16px; border-radius:50px; font-weight:800;">💚 Donate</a>
+    </div>
+    <div class="hamburger">
+      <div></div><div></div><div></div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="home" class="page active">
+      <div class="hero">
+        <video class="hero-video" autoplay loop muted playsinline>
+          <source src="0001-0450.mkv">
+        </video>
+
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+
+        <div class="hero-content reveal">
+          <div class="badge">
+            <div class="dot"></div>
+            🏆 2025 &amp; 2026 STEM Racing National Champions
+          </div>
+
+          <h1>IGNITE <span class="hero-accent">RACING</span></h1>
+
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">2×</div>
+              <div class="hero-stat-label">National Titles</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">10+</div>
+              <div class="hero-stat-label">Awards Won</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-num">1.207s</div>
+              <div class="hero-stat-label">Best Race Time</div>
+            </div>
+          </div>
+
+          <p class="sub">Designing, engineering, and racing miniature Formula 1-inspired cars. We use industry processes
+            and software to compete at the highest levels of the STEM Racing circuit.</p>
+
+          <div class="hero-ctas">
+            <a href="#" class="btn" data-target="engineering">Explore the Cars</a>
+            <a href="#" class="btn btn-outline" style="background:#fff;" data-target="history">Our Journey</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticker-wrap">
+        <div class="ticker-track">
+          <span class="ticker-item">🏆 2026 Canadian National Champions <span class="star">★</span></span>
+          <span class="ticker-item">⚡ Fastest Car Award 2025 <span class="star">★</span></span>
+          <span class="ticker-item">🔩 Best Engineered Car 2026 <span class="star">★</span></span>
+          <span class="ticker-item">📋 Best Enterprise Portfolio <span class="star">★</span></span>
+          <span class="ticker-item">🎨 Best Team Identity <span class="star">★</span></span>
+          <span class="ticker-item">🏆 2025 Canadian National Champions <span class="star">★</span></span>
+          <span class="ticker-item">📸 Digital Media Award <span class="star">★</span></span>
+          <span class="ticker-item">🌍 World Finals Bound <span class="star">★</span></span>
+          <span class="ticker-item">🏆 2026 Canadian National Champions <span class="star">★</span></span>
+          <span class="ticker-item">⚡ Fastest Car Award 2025 <span class="star">★</span></span>
+          <span class="ticker-item">🔩 Best Engineered Car 2026 <span class="star">★</span></span>
+          <span class="ticker-item">📋 Best Enterprise Portfolio <span class="star">★</span></span>
+          <span class="ticker-item">🎨 Best Team Identity <span class="star">★</span></span>
+          <span class="ticker-item">🏆 2025 Canadian National Champions <span class="star">★</span></span>
+          <span class="ticker-item">📸 Digital Media Award <span class="star">★</span></span>
+          <span class="ticker-item">🌍 World Finals Bound <span class="star">★</span></span>
+        </div>
+      </div>
+
+      <div class="container reveal">
+
+        <div class="stats-strip">
+          <div class="stat-item">
+            <div class="stat-num" data-target="2">0</div>
+            <div class="stat-label">National Championships</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="10">0</div>
+            <div class="stat-label">Awards Collected</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="6">0</div>
+            <div class="stat-label">Team Members</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" style="font-size:2.4rem;">48.05g</div>
+            <div class="stat-label">Car Weight</div>
+          </div>
+        </div>
+
+        <h2 class="section-title" style="margin-bottom: 2rem; margin-top:4rem;">INTERACTIVE <span class="grad-text">3D MODEL</span></h2>
+        <div id="modelWrap" style="width:100%; height:600px; position:relative; z-index:20; background: radial-gradient(circle at 40% 50%, #ffffff 0%, #f0fafb 60%, #e0f4f6 100%); border-radius:20px; box-shadow:0 20px 60px rgba(99,201,211,0.12); border:2px solid var(--border); overflow:hidden;">
+          <model-viewer id="carModel" src="car.glb" auto-rotate camera-controls touch-action="pan-y"
+            loading="eager" reveal="auto" disable-pan
+            interaction-prompt="none" shadow-intensity="1.8" shadow-softness="1" exposure="1.1"
+            environment-image="neutral"
+            camera-orbit="45deg 65deg 4m" field-of-view="30deg" min-field-of-view="15deg" max-field-of-view="50deg"
+            interpolation-decay="100" rotation-per-second="20deg"
+            style="width:100%; height:100%; background:transparent; --poster-color:transparent;">
+            <div slot="progress-bar"></div>
+          </model-viewer>
+          <div id="modelFallback" style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; flex-direction:column; gap:1rem; padding:2rem; text-align:center; background: radial-gradient(circle at 40% 50%, #ffffff 0%, #f0fafb 60%, #e0f4f6 100%);">
+            <div style="font-size:3rem;">⚙️</div>
+            <p style="color:var(--text-dim); font-size:0.95rem; max-width:520px;">For the interactive 3D model, open this page via <strong>Live Server</strong> in VS Code or run <code>python -m http.server</code> in this folder.</p>
+          </div>
+          <button class="model-reset-btn"
+            onclick="(function(){var m=document.getElementById('carModel'); m.cameraOrbit='45deg 65deg 4m'; m.fieldOfView='30deg'; m.cameraTarget='auto auto auto'; try{ m.play(); }catch(e){} })();">
+            ↺ Reset View
+          </button>
+          <script>
+            (function(){
+              var mv = document.getElementById('carModel');
+              var fb = document.getElementById('modelFallback');
+              function showFallback(){
+                if (!mv || !fb) return;
+                mv.style.display = 'none';
+                fb.style.display = 'flex';
+              }
+              if (location.protocol === 'file:') { showFallback(); return; }
+              mv && mv.addEventListener('error', showFallback);
+            })();
+          </script>
+        </div>
+        <p class="model-hint">🖱️ Click and drag to rotate &bull; Scroll to zoom &bull; Right-click to pan</p>
+
+        <div class="grid-2 home-cards" style="margin-top:3rem;">
+          <div class="home-card-box">
+            <h3>WHAT IS STEM RACING?</h3>
+            <p>A premier global student competition where teams use industry-standard technology — including CAD
+              modeling, CFD fluid dynamics, CNC machining, and 3D printing — to design, manufacture, and race miniature
+              F1 cars. Beyond engineering, teams compete in a full <strong>Enterprise Challenge</strong>: building a
+              real business case with sponsorships, branding, financial planning, and a professional portfolio
+              presentation judged by industry experts.</p>
+          </div>
+          <div class="home-card-box" style="border-top-color: var(--brand-teal);">
+            <h3>WHO WE ARE</h3>
+            <p>We are a dedicated engineering team from SATEC @ W.A. Porter CI in Toronto. As a proud public school
+              team, we rely on passion, resilience, and hard work to overcome challenges and compete for National
+              Championships.</p>
+          </div>
+        </div>
+
+        <div class="gallery-section reveal" style="margin-top: 8rem;">
+          <h2 class="section-title">AT THE <span class="grad-text">TRACK</span></h2>
+          <p style="color:var(--text-dim); margin-bottom:0; font-size:1.1rem; text-align:center;">Click to explore our photo universe</p>
+
+          <div class="photo-orbit-wrap" id="photoOrbitWrap">
+            <div class="photo-orbit-ring" id="photoOrbitRing">
+              <div class="photo-orbit-item" onclick="openPhotoUniverse()" style="border-radius:55% 45% 50% 50%;"><img src="ignite_gallery_1.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+              <div class="photo-orbit-item" onclick="openPhotoUniverse()" style="border-radius:45% 55% 45% 55%;"><img src="ignite_gallery_5.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+              <div class="photo-orbit-item" onclick="openPhotoUniverse()" style="border-radius:50% 40% 55% 45%;"><img src="ignite_gallery_12.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+              <div class="photo-orbit-item" onclick="openPhotoUniverse()" style="border-radius:40% 50% 45% 55%;"><img src="ignite_gallery_20.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+              <div class="photo-orbit-item" onclick="openPhotoUniverse()" style="border-radius:50% 45% 40% 55%;"><img src="ignite_gallery_8.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+              <div class="photo-orbit-item" onclick="openPhotoUniverse()" style="border-radius:55% 50% 45% 40%;"><img src="ignite_gallery_15.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+              <div class="photo-orbit-item" onclick="openPhotoUniverse()" style="border-radius:45% 55% 55% 45%;"><img src="ignite_gallery_3.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+              <div class="photo-orbit-item" onclick="openPhotoUniverse()" style="border-radius:50% 45% 50% 45%;"><img src="ignite_gallery_7.jpg" alt="" onerror="this.parentElement.style.display='none'"></div>
+            </div>
+            <div class="photo-orbit-center" onclick="openPhotoUniverse()">
+              <div class="orbit-icon">🌌</div>
+              <span>EXPLORE</span>
+              <small>100+ photos</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="engineering" class="page">
+      <div class="container">
+        <h2 class="section-title reveal">STATE-OF-THE-ART <span class="grad-text">ENGINEERING</span></h2>
+        <p class="section-subtitle reveal" style="margin-bottom:5rem;">Using modern design and manufacturing to bring our ideas to life on the track.</p>
+
+        <div class="car-display reveal">
+          <div class="car-stats-header">
+            <div class="car-stat highlight-box"><h3>1.207s</h3><span>Race Time</span></div>
+            <div class="car-stat"><h3>Fastest Car</h3><span>Award</span></div>
+            <div class="car-stat"><h3>48.05g</h3><span>Weight</span></div>
+          </div>
+          <h2 class="car-title text-center">NATIONALS CAR: <span class="grad-text">FLAME</span></h2>
+          <div class="car-image-box">
+            <img src="Nationals Car Flame.png" alt="Nationals Car Flame">
+          </div>
+        </div>
+
+        <div class="car-display reveal">
+          <div class="car-stats-header">
+            <div class="car-stat highlight-box"><h3>1.230s</h3><span>Race Time</span></div>
+            <div class="car-stat"><h3>Best Engineered Car</h3><span>Award</span></div>
+            <div class="car-stat"><h3>48.05g</h3><span>Weight</span></div>
+          </div>
+          <h2 class="car-title text-center">REGIONALS CAR: <span class="grad-text">SPARK</span></h2>
+          <div class="car-image-box">
+            <img src="Regionals Car Spark.png" alt="Regionals Car Spark">
+          </div>
+        </div>
+
+        <!-- Engineering Portfolio Widget — Title page preview -->
+        <div class="eng-portfolio-widget reveal" style="margin-top:5rem;" onclick="openPortfolioViewer('eng_portfolio','ENGINEERING PORTFOLIO',2)">
+          <div class="epw-header">
+            <div>
+              <div class="pill" style="margin-bottom:0.8rem;">🏆 AWARD-WINNING · TITLE PAGE PREVIEW</div>
+              <h3 style="font-size:2.8rem; line-height:1; margin-bottom:0.6rem;">ENGINEERING <span class="grad-text">PORTFOLIO</span></h3>
+              <p style="color:var(--text-dim); font-size:1.05rem; max-width:600px;">Our award-winning documentation — design iteration, CFD analysis, CAD evolution, and manufacturing notes. Only the title page is shown publicly; full portfolio available on request.</p>
+            </div>
+            <div class="epw-cta">View →</div>
+          </div>
+          <div class="epw-grid" style="grid-template-columns: 1fr; max-width: 420px; margin: 0 auto;">
+            <img src="eng_portfolio/1.png" alt="Title page" style="aspect-ratio:auto;">
+          </div>
+        </div>
+
+        <div class="grid-4 stagger-children reveal" style="margin-top:5rem;">
+          <div class="card-hover">
+            <div class="icon-header">🖥️</div>
+            <h3 style="font-size:1.8rem; margin-bottom:10px;">CAD MODELING</h3>
+            <p style="color:var(--text-dim); font-size:1rem;">Constructing precise 3D digital geometries in Fusion 360 and SolidWorks, iterated across dozens of design revisions.</p>
+          </div>
+          <div class="card-hover">
+            <div class="icon-header">💨</div>
+            <h3 style="font-size:1.8rem; margin-bottom:10px;">CFD SIMULATION</h3>
+            <p style="color:var(--text-dim); font-size:1rem;">Iterative aerodynamic testing using computational fluid dynamics to minimize drag and maximize downforce.</p>
+          </div>
+          <div class="card-hover">
+            <div class="icon-header">⚙️</div>
+            <h3 style="font-size:1.8rem; margin-bottom:10px;">CNC MACHINING</h3>
+            <p style="color:var(--text-dim); font-size:1rem;">Carving regulation foam blocks with sub-millimeter precision at SATEC's dedicated CNC lab.</p>
+          </div>
+          <div class="card-hover">
+            <div class="icon-header">🖨️</div>
+            <h3 style="font-size:1.8rem; margin-bottom:10px;">3D PRINTING</h3>
+            <p style="color:var(--text-dim); font-size:1rem;">Printing ultra-light wing foils and nose cones in high-performance polymers for maximum structural integrity.</p>
+          </div>
+          <div class="card-hover">
+            <div class="icon-header">📐</div>
+            <h3 style="font-size:1.8rem; margin-bottom:10px;">ENGINEERING DRAWINGS</h3>
+            <p style="color:var(--text-dim); font-size:1rem;">Production-grade technical drawings documenting every component to industry manufacturing standards.</p>
+          </div>
+          <div class="card-hover">
+            <div class="icon-header">⚖️</div>
+            <h3 style="font-size:1.8rem; margin-bottom:10px;">WEIGHT OPTIMIZATION</h3>
+            <p style="color:var(--text-dim); font-size:1rem;">Every gram matters. Our Nationals car weighs exactly <strong>48.05g</strong> — precision-balanced for peak launch acceleration.</p>
+          </div>
+          <div class="card-hover">
+            <div class="icon-header">🏢</div>
+            <h3 style="font-size:1.8rem; margin-bottom:10px;">ENTERPRISE</h3>
+            <p style="color:var(--text-dim); font-size:1rem;">Running a real business: securing sponsorships, building brand identity, financial forecasting, and presenting to industry judges.</p>
+          </div>
+          <div class="card-hover">
+            <div class="icon-header">📊</div>
+            <h3 style="font-size:1.8rem; margin-bottom:10px;">PROJECT MANAGEMENT</h3>
+            <p style="color:var(--text-dim); font-size:1rem;">Structured sprint planning, milestone tracking, and cross-functional coordination from concept to race day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="page">
+      <div class="container">
+        <h2 class="section-title reveal">OUR <span class="grad-text">TROPHY CABINET</span></h2>
+        <p class="section-subtitle reveal">Our cars are built for speed, but our teamwork is what truly drives us forward.</p>
+
+        <h3 class="year-header reveal">🏆 2026 NATIONAL CHAMPIONSHIPS</h3>
+        <div class="grid-3 stagger-children reveal">
+          <div class="achievement-card">
+            <span class="pill" style="background:linear-gradient(135deg,rgba(99,201,211,0.15),rgba(99,201,211,0.05)); color:var(--brand-blue); border-color:rgba(99,201,211,0.4);">1st Place</span>
+            <h3>Canadian National Champions</h3>
+          </div>
+          <div class="achievement-card"><span class="pill">Engineering</span><h3>Best Engineered Car</h3></div>
+          <div class="achievement-card"><span class="pill">Documentation</span><h3>Best Enterprise Portfolio</h3></div>
+          <div class="achievement-card"><span class="pill">Marketing</span><h3>Best Team Identity</h3></div>
+          <div class="achievement-card"><span class="pill">Presentation</span><h3>2nd Best Pit Display</h3></div>
+          <div class="achievement-card"><span class="pill">Documentation</span><h3>2nd Best Engineering Portfolio</h3></div>
+          <div class="achievement-card"><span class="pill">Workflow</span><h3>2nd Best Project Management</h3></div>
+        </div>
+
+        <h3 class="year-header reveal" style="margin-top:5rem;">🏆 2025 NATIONAL CHAMPIONSHIPS</h3>
+        <div class="grid-3 stagger-children reveal">
+          <div class="achievement-card">
+            <span class="pill" style="background:linear-gradient(135deg,rgba(122,206,123,0.15),rgba(122,206,123,0.05)); color:var(--brand-teal); border-color:rgba(122,206,123,0.4);">1st Place</span>
+            <h3>Canadian Champions</h3>
+          </div>
+          <div class="achievement-card"><span class="pill">Speed</span><h3>Fastest Car</h3></div>
+          <div class="achievement-card"><span class="pill">Marketing</span><h3>Digital Media Award</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="history" class="page">
+      <div class="container">
+        <h2 class="section-title reveal">OUR <span class="grad-text">JOURNEY</span></h2>
+        <p class="section-subtitle reveal">From a spark to a flame — the story behind the team.</p>
+      </div>
+
+      <div class="journey-chapters">
+
+        <div class="chapter-block chapter-dark reveal">
+          <div class="chapter-year">2024</div>
+          <div class="chapter-content">
+            <div class="chapter-tag">THE ORIGIN</div>
+            <h2 class="chapter-title">NITRO <span class="grad-text">RACING</span></h2>
+            <p class="chapter-body">Before Ignite, there was Nitro. A group of students from SATEC @ W.A. Porter CI built their first car from scratch, learned the craft, and shocked everyone by claiming the <strong>2024 Canadian Checkpoint Championship</strong> — placing 2nd in all of North America.</p>
+          </div>
+          <div class="chapter-img-wrap">
+            <img src="image (4).png" alt="Nitro Racing" onerror="this.style.display='none'">
+          </div>
+        </div>
+
+        <div class="chapter-block chapter-light reveal">
+          <div class="chapter-img-wrap">
+            <img src="ignite_gallery_82.jpg" alt="Canadian Nationals 2025" onerror="this.style.display='none'">
+          </div>
+          <div class="chapter-content">
+            <div class="chapter-year">2025</div>
+            <div class="chapter-tag">THE BREAKTHROUGH</div>
+            <h2 class="chapter-title">CANADIAN <span class="grad-text">NATIONALS</span></h2>
+            <p class="chapter-body">Nitro Racing entered the 2025 Canadian Nationals and stood on top of the podium as <strong>National Champions</strong>. The team qualified for the World Finals — but without funding, the dream had to wait.</p>
+          </div>
+        </div>
+
+        <div class="chapter-block chapter-dark reveal">
+          <div class="chapter-year">2025</div>
+          <div class="chapter-content">
+            <div class="chapter-tag">THE REBRAND</div>
+            <h2 class="chapter-title">BORN AS <span class="grad-text">IGNITE</span></h2>
+            <p class="chapter-body">With most original members heading to university, a fresh generation stepped up. The team rebranded as <strong>Team Ignite</strong> — a new name, a new identity, and a burning ambition. They placed 4th at Regionals and punched through to Nationals.</p>
+          </div>
+          <div class="chapter-img-wrap">
+            <img src="IMG_3385.jpeg" alt="Team Ignite rebranding" onerror="this.style.display='none'">
+          </div>
+        </div>
+
+        <div class="chapter-block chapter-grad reveal">
+          <div class="chapter-img-wrap">
+            <img src="ignite_gallery_20.jpg" alt="2026 National Champions" onerror="this.style.display='none'">
+          </div>
+          <div class="chapter-content">
+            <div class="chapter-year">2026</div>
+            <div class="chapter-tag">THE PINNACLE</div>
+            <h2 class="chapter-title" style="color:#fff;">NATIONAL <span style="opacity:0.85;">CHAMPIONS</span></h2>
+            <p class="chapter-body" style="color:rgba(255,255,255,0.85);">In their debut season as Team Ignite, they swept the competition — taking home the <strong>2026 Canadian National Championship</strong> alongside Best Engineered Car, Best Enterprise Portfolio, and Best Team Identity.</p>
+          </div>
+        </div>
+
+        <div class="chapter-block chapter-light reveal">
+          <div class="chapter-img-wrap">
+            <img src="ignite_gallery_21.jpg" alt="World Finals preparation" onerror="this.style.display='none'">
+          </div>
+          <div class="chapter-content">
+            <div class="chapter-year">NOW</div>
+            <div class="chapter-tag">WHAT'S NEXT</div>
+            <h2 class="chapter-title">THE <span class="grad-text">WORLD STAGE</span></h2>
+            <p class="chapter-body">The story isn't over. Team Ignite is deep in engineering, testing, and preparation as they set their sights on the <strong>World Finals</strong>. The flame is burning brighter than ever.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="team" class="page">
+      <div class="container">
+        <h2 class="section-title reveal">THE <span class="grad-text">TEAM</span></h2>
+        <p class="section-subtitle reveal">Six dedicated students — engineers, designers, and strategists — united by one goal.</p>
+
+        <div class="grid-3 stagger-children reveal">
+          <div class="team-card">
+            <div class="avatar-wrapper"><div class="avatar-inner"><img src="Tanai.png" alt="Tanai Mehta" onerror="this.src='';"></div></div>
+            <h3>Tanai Mehta</h3>
+            <div class="role">Team Principal & Design Eng.</div>
+            <p>Leading our aerodynamic strategy and overseeing the mechanical design of the car.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar-wrapper"><div class="avatar-inner"><img src="Arun.png" alt="Arun Rajakumar" onerror="this.src='';"></div></div>
+            <h3>Arun Rajakumar</h3>
+            <div class="role">Sponsorship Manager</div>
+            <p>Building strong relationships with our sponsors and helping secure resources for the team.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar-wrapper"><div class="avatar-inner"><img src="Sophie.png" alt="Sophie Mcintosh" onerror="this.src='';"></div></div>
+            <h3>Sophie Mcintosh</h3>
+            <div class="role">Manufacturing Engineer</div>
+            <p>Bringing our digital designs into the real world through careful manufacturing.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar-wrapper"><div class="avatar-inner"><img src="Nirbhan.png" alt="Nirbhan Chand" onerror="this.src='';"></div></div>
+            <h3>Nirbhan Chand</h3>
+            <div class="role">Aerodynamicist</div>
+            <p>Using virtual simulations to make sure our car glides through the air as smoothly as possible.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar-wrapper"><div class="avatar-inner"><img src="Zarin.png" alt="Zarin Ali" onerror="this.src='';"></div></div>
+            <h3>Zarin Ali</h3>
+            <div class="role">Digital Media Manager</div>
+            <p>Sharing our story online and keeping our community and sponsors engaged.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="avatar-wrapper"><div class="avatar-inner"><img src="Aryan.png" alt="Aryan Mehta" onerror="this.src='';"></div></div>
+            <h3>Aaryan Mehta</h3>
+            <div class="role">Graphics Designer</div>
+            <p>Designing the beautiful graphics and layouts for our team's portfolios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors" class="page">
+      <div class="container">
+        <!-- Sponsorship Package Hero — Front and Center -->
+        <div class="sponsor-pkg-hero reveal" onclick="openPortfolioViewer('sponsorship','SPONSORSHIP PACKAGE',9)">
+          <div class="pkg-hero-label"><div class="dot"></div> OFFICIAL PROPOSAL · 9 PAGES</div>
+          <h3>OUR <span class="grad-text">SPONSORSHIP PACKAGE</span></h3>
+          <p>Our complete investment proposal — tier breakdowns, deliverables, team accomplishments and the roadmap to the World Finals in Singapore. Click through to browse every page.</p>
+          <img src="sponsorship/1.png" alt="Sponsorship Package Cover">
+        </div>
+
+        <div class="sponsor-hero reveal">
+          <h3>WHY PARTNER WITH US?</h3>
+          <p>As consecutive National Champions, we offer our partners a chance to be part of an incredible journey.
+            Sponsoring Team Ignite puts your brand on our cars, apparel, and digital spaces, while directly supporting
+            students in STEM.</p>
+          <br>
+          <a href="#" class="btn" data-target="contact">Become a Partner Today</a>
+        </div>
+
+        <div class="sponsor-tiers stagger-children reveal">
+          <div class="stier-card tier-title">
+            <div class="stier-badge">Title Sponsor</div>
+            <div class="stier-amount">$30,000+</div>
+            <ul class="stier-perks">
+              <li>New team name (e.g. [Company] Ignite Racing)</li>
+              <li>Largest logos on social media, website, shirt, car &amp; pit display</li>
+              <li>Custom marketing: videos, campaigns &amp; promotions</li>
+              <li>Exclusivity within your industry — no competing brands</li>
+            </ul>
+            <a href="mailto:ignite.satec@gmail.com" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top:1rem;">Inquire Now</a>
+          </div>
+
+          <div class="stier-card tier-diamond">
+            <div class="stier-badge">Diamond Sponsor</div>
+            <div class="stier-amount">$15,000+</div>
+            <ul class="stier-perks">
+              <li>Large logos on social media, website, shirt, car &amp; pit display</li>
+              <li>Custom marketing: videos, campaigns &amp; promotions</li>
+              <li>Exclusivity within your industry — no competing brands</li>
+            </ul>
+            <a href="mailto:ignite.satec@gmail.com" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top:1rem;">Inquire Now</a>
+          </div>
+
+          <div class="stier-card tier-gold">
+            <div class="stier-badge">Gold Sponsor</div>
+            <div class="stier-amount">$5,000+</div>
+            <ul class="stier-perks">
+              <li>Medium logos on social media, website, shirt, car &amp; pit display</li>
+              <li>Custom marketing: videos, campaigns &amp; promotions</li>
+              <li>Exclusivity within your industry — no competing brands</li>
+            </ul>
+            <a href="mailto:ignite.satec@gmail.com" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top:1rem;">Inquire Now</a>
+          </div>
+
+          <div class="stier-card tier-silver">
+            <div class="stier-badge">Silver Sponsor</div>
+            <div class="stier-amount">&lt;$5,000</div>
+            <ul class="stier-perks">
+              <li>Logos on social media, website, shirt, car &amp; pit display</li>
+            </ul>
+            <a href="mailto:ignite.satec@gmail.com" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top:1rem;">Inquire Now</a>
+          </div>
+        </div>
+
+        <!-- Custom Amount — Email to discuss perks -->
+        <div class="stier-card reveal" style="margin-top:2rem; grid-column: span 2; text-align:center; background:linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(198,235,239,0.4) 100%); border:2px dashed var(--brand-blue); padding:2.5rem 2rem;">
+          <div class="stier-badge" style="background:var(--grad); color:#fff; display:inline-block; margin-bottom:1rem;">Custom Tier</div>
+          <h3 style="font-family:'Norwester','Poppins',sans-serif; font-size:2rem; margin-bottom:0.8rem; letter-spacing:2px;">CUSTOM <span class="grad-text">AMOUNT</span></h3>
+          <p style="color:var(--text-dim); margin:0 auto 1.5rem; max-width:620px; font-size:1.05rem;">Have a specific budget in mind? Email us and we'll discuss what perks fit your contribution — every dollar goes directly to funding student STEM and getting us to the World Finals.</p>
+          <a href="mailto:ignite.satec@gmail.com?subject=Custom%20Sponsorship%20Inquiry&body=Hi%20Ignite%20Racing%20team%2C%0A%0AI'd%20like%20to%20discuss%20a%20custom%20sponsorship%20amount.%0A%0AMy%20proposed%20contribution%3A%20%24%0AMy%20questions%2Fnotes%3A%0A%0AThanks!" target="_blank" rel="noopener noreferrer" class="btn">✉ Email Us to Discuss Perks</a>
+        </div>
+
+        <!-- Donate Section (GoFundMe) -->
+        <div id="donate" class="donate-banner reveal">
+          <div class="donate-label">🌍 World Finals Fund</div>
+          <h3>HELP US GET TO <span style="opacity:0.9;">SINGAPORE</span></h3>
+          <p>As a public school team, the costs for the 2026 World Finals in Singapore far exceed our budget. Every donation — big or small — directly funds flights, equipment, and our chance to compete on the global stage against the world's best.</p>
+          <div class="donate-cta-row">
+            <a href="https://www.gofundme.com/f/canadian-champions-but-we-cant-afford-to-go-to-worlds" target="_blank" rel="noopener noreferrer" class="btn">💚 Donate on GoFundMe</a>
+            <a href="mailto:ignite.satec@gmail.com?subject=Donation%20Inquiry" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Or email us directly</a>
+          </div>
+        </div>
+
+        <h3 class="section-title reveal" style="font-size:2.4rem; margin-top:5rem;">OUR <span class="grad-text">PARTNERS</span></h3>
+        <p class="section-subtitle reveal" style="margin-bottom:3rem;">The organizations powering our journey to the World Finals.</p>
+        <div class="sponsor-logos-grid reveal">
+          <div class="sponsor-logo-item"><div class="logo-frame"><img src="Sponsor 1.png" alt="Tim Hortons"></div><span>Tim Hortons</span></div>
+          <div class="sponsor-logo-item"><div class="logo-frame"><img src="Sponsor 2.png" alt="Agnico Eagle"></div><span>Agnico Eagle</span></div>
+          <div class="sponsor-logo-item"><div class="logo-frame"><img src="Sponsor 3.png" alt="TDSB"></div><span>TDSB</span></div>
+          <div class="sponsor-logo-item"><div class="logo-frame"><img src="Sponsor 4.png" alt="PCBWay"></div><span>PCBWay</span></div>
+          <div class="sponsor-logo-item"><div class="logo-frame"><img src="SPonsor 5.png" alt="F1 Bearings"></div><span>F1 Bearings</span></div>
+          <div class="sponsor-logo-item"><div class="logo-frame"><img src="Sponsor 6.png" alt="BioSteel"></div><span>BioSteel</span></div>
+          <div class="sponsor-logo-item"><div class="logo-frame"><img src="Sponsor 7.png" alt="AFA"></div><span>AFA</span></div>
+          <div class="sponsor-logo-item"><div class="logo-frame"><img src="Sponsor 8.png" alt="Centre of Learning &amp; Development"></div><span>CLD Toronto</span></div>
+          <div class="sponsor-logo-item"><div class="logo-frame"><img src="Sponsor 9.png" alt="Agile Manufacturing"></div><span>Agile Manufacturing</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="page">
+      <div class="container">
+        <h2 class="section-title reveal">LATEST <span class="grad-text">NEWS</span></h2>
+        <p class="section-subtitle reveal">Updates and press from our journey to the World Finals.</p>
+
+        <div class="grid-3 stagger-children reveal">
+          <div class="news-card" onclick="openModal('newsModalNationals2026')">
+            <img src="ignite_gallery_0.jpg" alt="Canadian Nationals 2026" class="news-img" onerror="this.src='Nationals Car Flame.png';">
+            <div class="news-content">
+              <span class="news-date">2026 Season</span>
+              <h3 class="news-title">Canadian National Champions — 2026</h3>
+              <p class="news-desc">Team Ignite swept Nationals 2026 — 1st overall, Best Engineered Car, Best Enterprise Portfolio, and Best Team Identity.</p>
+            </div>
+          </div>
+
+          <div class="news-card" onclick="openModal('newsModalNationals')">
+            <img src="nationals_photos/nationals_7.jpg" alt="Canadian Nationals 2025" class="news-img" onerror="this.src='ignite_gallery_20.jpg';">
+            <div class="news-content">
+              <span class="news-date">2025 Season</span>
+              <h3 class="news-title">Canadian National Champions — 2025</h3>
+              <p class="news-desc">Nitro Racing claimed the Canadian National Championship title — placing 1st in Canada and 2nd in all of North America.</p>
+            </div>
+          </div>
+
+          <div class="news-card" onclick="openModal('newsModal1')">
+            <img src="B1E422A2-6179-4D6D-A650-D4C5DEAFAD01.jpg" alt="Ignite on CTV" class="news-img" onerror="this.src='';">
+            <div class="news-content">
+              <span class="news-date">April 2026</span>
+              <h3 class="news-title">Ignite Featured on CTV News</h3>
+              <p class="news-desc">An exclusive broadcast covering our journey from National Champions to preparing for the World Stage.</p>
+            </div>
+          </div>
+
+          <div class="news-card" onclick="openModal('newsModal2')">
+            <img src="ignite_gallery_46.jpg" alt="Montreal Grand Prix" class="news-img" onerror="this.src='';">
+            <div class="news-content">
+              <span class="news-date">June 2025</span>
+              <h3 class="news-title">Nitro at the Montreal Grand Prix</h3>
+              <p class="news-desc">At the Formula 1 Canadian Grand Prix, our team had the honor of meeting with global engineering leaders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolios" class="page">
+      <div class="container">
+        <h2 class="section-title reveal">OUR <span class="grad-text">PORTFOLIOS</span></h2>
+        <p class="section-subtitle reveal">Renders, technical drawings, and the full engineering &amp; enterprise portfolios that won us the national title.</p>
+
+        <div class="portfolio-grid stagger-children reveal">
+
+          <div class="portfolio-card" onclick="openPortfolioViewer('renders', 'CAR RENDERS', 2)">
+            <img class="portfolio-thumb" src="renders/1.png" alt="Car Renders">
+            <div class="portfolio-info">
+              <h3>CAR RENDERS</h3>
+              <p>High-fidelity 3D visualizations of Flame and Spark — our Nationals and Regionals cars.</p>
+              <span class="portfolio-badge badge-eng">Title Page Only &bull; Click to View</span>
+            </div>
+          </div>
+
+          <div class="portfolio-card" onclick="openPortfolioViewer('drawings', 'ENGINEERING DRAWINGS', 2)">
+            <img class="portfolio-thumb" src="drawings/1.png" alt="Engineering Drawings">
+            <div class="portfolio-info">
+              <h3>ENGINEERING DRAWINGS</h3>
+              <p>Production-grade technical drawings with full dimensioning, tolerances, and material callouts.</p>
+              <span class="portfolio-badge badge-eng">Title Page Only &bull; Click to View</span>
+            </div>
+          </div>
+
+          <div class="portfolio-card" onclick="openPortfolioViewer('eng_portfolio', 'ENGINEERING PORTFOLIO', 2)">
+            <img class="portfolio-thumb" src="eng_portfolio/1.png" alt="Engineering Portfolio">
+            <div class="portfolio-info">
+              <h3>ENGINEERING PORTFOLIO</h3>
+              <p>Our complete engineering portfolio — design process, CFD analysis, and iteration history.</p>
+              <span class="portfolio-badge badge-eng">Title Page Only &bull; Click to View</span>
+            </div>
+          </div>
+
+          <div class="portfolio-card" onclick="openPortfolioViewer('ent_portfolio', 'ENTERPRISE PORTFOLIO', 2)">
+            <img class="portfolio-thumb" src="ent_portfolio/1.png" alt="Enterprise Portfolio">
+            <div class="portfolio-info">
+              <h3>ENTERPRISE PORTFOLIO</h3>
+              <p>Business plan, sponsorship strategy, brand identity, and financial forecasting — award-winning at Nationals 2026.</p>
+              <span class="portfolio-badge badge-ent">Title Page Only &bull; Click to View</span>
+            </div>
+          </div>
+
+          <div class="portfolio-card" onclick="openPortfolioViewer('sponsorship', 'SPONSORSHIP PACKAGE', 9)">
+            <img class="portfolio-thumb" src="sponsorship/1.png" alt="Sponsorship Package">
+            <div class="portfolio-info">
+              <h3>SPONSORSHIP PACKAGE</h3>
+              <p>Our official sponsorship proposal — tiers, costs, deliverables and the vision for World Finals.</p>
+              <span class="portfolio-badge badge-ent">9 Pages &bull; Click to View</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="page">
+      <div class="container">
+        <h2 class="section-title reveal">LET'S <span class="grad-text">CONNECT</span></h2>
+        <p class="section-subtitle reveal">Reach out to fund the future of engineering.</p>
+
+        <div class="grid-2 reveal">
+          <div class="contact-links">
+            <a href="https://www.instagram.com/igniteracing_/" target="_blank" rel="noopener noreferrer" class="social-link">
+              <div class="social-icon"><img src="Instagram_icon.png" alt="Instagram"></div>
+              <div class="social-info"><h4>Instagram</h4><p>@igniteracing_</p></div>
+            </a>
+            <a href="https://www.linkedin.com/company/ignite-racing-stem-racing/" target="_blank" rel="noopener noreferrer" class="social-link">
+              <div class="social-icon"><img src="OIP.jpg" alt="LinkedIn"></div>
+              <div class="social-info"><h4>LinkedIn</h4><p>Ignite Racing</p></div>
+            </a>
+            <a href="mailto:ignite.satec@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <div class="social-icon"><img src="download.jpg" alt="Email"></div>
+              <div class="social-info"><h4>Email</h4><p>ignite.satec@gmail.com</p></div>
+            </a>
+          </div>
+
+          <div class="school-card">
+            <h3>HEADQUARTERS</h3>
+            <div class="info-row"><span class="lbl">School</span><span class="val">SATEC @ W.A. Porter CI</span></div>
+            <div class="info-row"><span class="lbl">Location</span><span class="val">Toronto, ON, Canada</span></div>
+            <div class="info-row"><span class="lbl">League</span><span class="val">STEM (F1 in Schools)</span></div>
+            <div class="info-row" style="border:none; margin-bottom:0;"><span class="lbl">Season</span><span class="val">26' &amp; 25'</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sponsor Logo Marquee -->
+  <div class="logo-marquee-wrap">
+    <div class="logo-marquee-label">Proudly Supported By</div>
+    <div class="logo-marquee-track" id="marqueeTrack">
+      <img src="Sponsor 1.png" alt="Tim Hortons">
+      <img src="Sponsor 2.png" alt="Agnico Eagle">
+      <img src="Sponsor 3.png" alt="TDSB">
+      <img src="Sponsor 4.png" alt="PCBWay">
+      <img src="SPonsor 5.png" alt="F1 Bearings">
+      <img src="Sponsor 6.png" alt="BioSteel">
+      <img src="Sponsor 7.png" alt="AFA">
+      <img src="Sponsor 8.png" alt="CLD Toronto">
+      <img src="Sponsor 9.png" alt="Agile Manufacturing">
+      <img src="Sponsor 1.png" alt="Tim Hortons">
+      <img src="Sponsor 2.png" alt="Agnico Eagle">
+      <img src="Sponsor 3.png" alt="TDSB">
+      <img src="Sponsor 4.png" alt="PCBWay">
+      <img src="SPonsor 5.png" alt="F1 Bearings">
+      <img src="Sponsor 6.png" alt="BioSteel">
+      <img src="Sponsor 7.png" alt="AFA">
+      <img src="Sponsor 8.png" alt="CLD Toronto">
+      <img src="Sponsor 9.png" alt="Agile Manufacturing">
+    </div>
+  </div>
+
+  <!-- Portfolio Viewer -->
+  <div class="pf-viewer" id="pfViewer">
+    <div class="pf-title" id="pfTitle"></div>
+    <div class="pf-close" id="pfClose">&times;</div>
+    <button class="pf-nav prev" id="pfPrev">&#9664;</button>
+    <img src="" alt="Portfolio page" id="pfImage">
+    <div class="pf-lock" id="pfLock">
+      <div class="lock-icon">🔒</div>
+      <h4>FULL PORTFOLIO HIDDEN</h4>
+      <p>Only the title page is shown publicly.<br>Contact us for the complete portfolio.</p>
+    </div>
+    <button class="pf-nav next" id="pfNext">&#9654;</button>
+    <div class="pf-counter" id="pfCounter"></div>
+  </div>
+
+  <!-- Photo Universe — Landonorris-inspired immersive gallery -->
+  <div class="photo-universe" id="photoUniverse">
+    <!-- Liquid flowing SVG waves -->
+    <div class="pu-liquid">
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="puWg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#63c9d3" stop-opacity="0.9"/>
+            <stop offset="50%" stop-color="#7ace7b" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#b388ff" stop-opacity="0.6"/>
+          </linearGradient>
+          <linearGradient id="puWg2" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffb678" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#45e89a" stop-opacity="0.4"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#puWg1)" d="M0,400 C320,280 640,520 960,380 C1200,280 1400,480 1600,360 L1600,900 L0,900 Z">
+          <animate attributeName="d" dur="20s" repeatCount="indefinite"
+            values="M0,400 C320,280 640,520 960,380 C1200,280 1400,480 1600,360 L1600,900 L0,900 Z;
+                    M0,460 C320,580 640,320 960,500 C1200,620 1400,320 1600,460 L1600,900 L0,900 Z;
+                    M0,400 C320,280 640,520 960,380 C1200,280 1400,480 1600,360 L1600,900 L0,900 Z"/>
+        </path>
+        <path fill="url(#puWg2)" d="M0,600 C400,480 800,720 1200,580 C1400,500 1520,640 1600,580 L1600,900 L0,900 Z" opacity="0.7">
+          <animate attributeName="d" dur="26s" repeatCount="indefinite"
+            values="M0,600 C400,480 800,720 1200,580 C1400,500 1520,640 1600,580 L1600,900 L0,900 Z;
+                    M0,560 C400,700 800,460 1200,640 C1400,720 1520,500 1600,620 L1600,900 L0,900 Z;
+                    M0,600 C400,480 800,720 1200,580 C1400,500 1520,640 1600,580 L1600,900 L0,900 Z"/>
+        </path>
+      </svg>
+    </div>
+
+    <div class="pu-blob pu-blob-1"></div>
+    <div class="pu-blob pu-blob-2"></div>
+    <div class="pu-blob pu-blob-3"></div>
+    <div class="pu-blob pu-blob-4"></div>
+
+    <div class="pu-title">IGNITE</div>
+
+    <div class="pu-hint">✦ Drag to explore · Scroll to zoom · Hover to reveal ✦</div>
+    <button class="pu-close" id="puClose">&times;</button>
+    <div class="photo-universe-inner" id="puInner"></div>
+    <div class="pu-zoom-controls">
+      <button class="pu-zoom-btn" id="puZoomOut">&minus;</button>
+      <span class="pu-zoom-label" id="puZoomLabel">100%</span>
+      <button class="pu-zoom-btn" id="puZoomIn">&plus;</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-brand">
+      <div class="dot" style="background:var(--grad);"></div>
+      <span class="foot-brand-text">IGNITE RACING</span>
+    </div>
+    <div class="foot-center">&copy; 2026 Ignite Racing &middot; SATEC @ W.A. Porter CI</div>
+    <div class="foot-social">
+      <a href="https://www.instagram.com/igniteracing_/" target="_blank" rel="noopener noreferrer"><img src="Instagram_icon.png" alt="Instagram" class="foot-social-icon"></a>
+      <a href="https://www.linkedin.com/company/ignite-racing-stem-racing/" target="_blank" rel="noopener noreferrer"><img src="OIP.jpg" alt="LinkedIn" class="foot-social-icon"></a>
+      <a href="mailto:ignite.satec@gmail.com" target="_blank" rel="noopener noreferrer"><img src="download.jpg" alt="Email" class="foot-social-icon"></a>
+    </div>
+  </footer>
+
+  <div id="galleryModal" class="modal-backdrop">
+    <div class="modal-content">
+      <div class="modal-close" onclick="closeModal('galleryModal')">×</div>
+      <h2 class="section-title" style="font-size:2.5rem; text-align:left; margin-bottom:10px;">TRACK <span class="grad-text">COLLAGE</span></h2>
+      <p style="color:var(--text-dim); margin-bottom:20px;">A collection of moments from our events.</p>
+      <div class="modal-grid">
+        <img src="ignite_gallery_1.jpg"  alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_2.jpg"  alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_3.jpg"  alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_4.jpg"  alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_5.jpg"  alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_6.jpg"  alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_7.jpg"  alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_8.jpg"  alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_9.jpg"  alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_10.jpg" alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_11.jpg" alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_12.jpg" alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_13.jpg" alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_14.jpg" alt="" onerror="this.style.display='none';">
+        <img src="ignite_gallery_15.jpg" alt="" onerror="this.style.display='none';">
+      </div>
+    </div>
+  </div>
+
+  <div id="newsModalNationals2026" class="modal-backdrop">
+    <div class="modal-content" style="max-width:1000px;">
+      <div class="modal-close" onclick="closeModal('newsModalNationals2026')">×</div>
+      <h2 class="section-title" style="font-size:2.5rem; text-align:left; margin-bottom:10px;">CANADIAN NATIONAL <span class="grad-text">CHAMPIONS 2026</span></h2>
+      <p style="color:var(--text-dim); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+        In their debut season as Team Ignite, the team swept the 2026 Canadian National Championship —
+        taking home <strong>1st Place Overall</strong>, <strong>Best Engineered Car</strong>,
+        <strong>Best Enterprise Portfolio</strong>, and <strong>Best Team Identity</strong>. The victory
+        secures our place at the STEM Racing World Finals.
+      </p>
+      <div class="modal-grid" style="grid-template-columns:repeat(3,1fr);">
+        <img src="Nationals Car Flame.png" alt="Nationals 2026 — Flame" onerror="this.style.display='none';">
+        <img src="ignite_gallery_0.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="ignite_gallery_1.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="ignite_gallery_2.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="ignite_gallery_3.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="ignite_gallery_4.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="ignite_gallery_5.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="ignite_gallery_6.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="ignite_gallery_7.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="ignite_gallery_8.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="ignite_gallery_9.jpg" alt="Nationals 2026" onerror="this.style.display='none';">
+        <img src="Team photo.jpg" alt="Team Ignite" onerror="this.style.display='none';">
+      </div>
+    </div>
+  </div>
+
+  <div id="newsModalNationals" class="modal-backdrop">
+    <div class="modal-content" style="max-width:1000px;">
+      <div class="modal-close" onclick="closeModal('newsModalNationals')">×</div>
+      <h2 class="section-title" style="font-size:2.5rem; text-align:left; margin-bottom:10px;">CANADIAN <span class="grad-text">NATIONALS 2025</span></h2>
+      <p style="color:var(--text-dim); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+        In the 2025 season, competing as Nitro Racing, our team entered the Canadian National Championships and claimed
+        <strong>1st place in Canada</strong>, finishing 2nd in all of North America. This victory laid the foundation for
+        what would become Team Ignite — and set the stage for the 2026 sweep.
+      </p>
+      <div class="modal-grid" style="grid-template-columns:repeat(3,1fr);">
+        <img src="nationals_photos/nationals_0.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_1.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_2.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_3.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_4.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_5.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_6.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_7.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_8.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_9.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_10.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_11.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_12.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_13.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_14.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_15.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_16.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_17.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_18.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_19.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_20.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_21.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_22.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+        <img src="nationals_photos/nationals_23.jpg" alt="Nationals 2025" onerror="this.style.display='none';">
+      </div>
+    </div>
+  </div>
+
+  <div id="newsModal1" class="modal-backdrop">
+    <div class="modal-content" style="max-width:800px;">
+      <div class="modal-close" onclick="closeModal('newsModal1')">×</div>
+      <h2 class="section-title" style="font-size:2.5rem; text-align:left; margin-bottom:10px;">IGNITE ON <span class="grad-text">CTV</span></h2>
+      <p style="color:var(--text-dim); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+        Being featured on CTV was a massive milestone for Team Ignite. It gave us the platform to show the province how
+        pushing the boundaries of CAD, CFD, and aerodynamics can translate from a high school classroom directly into
+        the world of elite engineering.
+      </p>
+      <div class="modal-grid" style="grid-template-columns:1fr;">
+        <img src="B1E422A2-6179-4D6D-A650-D4C5DEAFAD01.jpg" alt="CTV Broadcast" onerror="this.src='';">
+      </div>
+    </div>
+  </div>
+
+  <div id="newsModal2" class="modal-backdrop">
+    <div class="modal-content" style="max-width:800px;">
+      <div class="modal-close" onclick="closeModal('newsModal2')">×</div>
+      <h2 class="section-title" style="font-size:2.5rem; text-align:left; margin-bottom:10px;">MONTREAL <span class="grad-text">GRAND PRIX</span></h2>
+      <p style="color:var(--text-dim); margin-bottom:20px; font-size:1.1rem; line-height:1.6;">
+        To truly understand the physics of racing, we went straight to the source. Attending the Formula 1 Canadian
+        Grand Prix allowed us to analyze full-scale aerodynamics in action and network with the masterminds behind the sport.
+      </p>
+      <div class="modal-grid" style="grid-template-columns:1fr 1fr;">
+        <img src="ignite_gallery_37.jpg" alt="" onerror="this.src='';">
+        <img src="ignite_gallery_40.jpg" alt="" onerror="this.src='';">
+        <img src="ignite_gallery_43.jpg" alt="" onerror="this.src='';">
+        <img src="ignite_gallery_47.jpg" alt="" onerror="this.src='';">
+        <img src="ignite_gallery_48.jpg" alt="" onerror="this.src='';">
+        <img src="ignite_gallery_49.jpg" alt="" onerror="this.src='';">
+        <img src="ignite_gallery_50.jpg" alt="" onerror="this.src='';">
+        <img src="ignite_gallery_55.jpg" alt="" onerror="this.src='';">
+        <img src="ignite_gallery_56.jpg" alt="" onerror="this.src='';">
+        <img src="ignite_gallery_59.jpg" alt="" onerror="this.src='';">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow='hidden'; }
+    function closeModal(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow='auto'; }
+
+    window.addEventListener('click', function(e) {
+      document.querySelectorAll('.modal-backdrop').forEach(m => {
+        if (e.target === m) { m.classList.remove('open'); document.body.style.overflow='auto'; }
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
+
+      const hamburger = document.querySelector('.hamburger');
+      const navLinksContainer = document.querySelector('.nav-links');
+      hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); navLinksContainer.classList.toggle('open'); });
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+      document.querySelectorAll('.reveal, .stagger-children').forEach(el => revealObserver.observe(el));
+
+      function animateCounter(el) {
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1400;
+        const start = performance.now();
+        function tick(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(ease * target) + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = target + suffix;
+        }
+        requestAnimationFrame(tick);
+      }
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('[data-target]').forEach(animateCounter);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      const statsStrip = document.querySelector('.stats-strip');
+      if (statsStrip) counterObserver.observe(statsStrip);
+
+      const links = document.querySelectorAll('a[data-target]');
+      const pages = document.querySelectorAll('.page');
+
+      links.forEach(link => {
+        link.addEventListener('click', (e) => {
+          const targetId = link.getAttribute('data-target');
+          if (!targetId) return;
+          e.preventDefault();
+
+          if (navLinksContainer.classList.contains('open')) {
+            navLinksContainer.classList.remove('open');
+            hamburger.classList.remove('open');
+          }
+
+          document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+          const navItem = document.querySelector(`.nav-links a[data-target="${targetId}"]`);
+          if (navItem) navItem.classList.add('active');
+
+          pages.forEach(p => { p.classList.remove('active'); p.style.display='none'; });
+
+          const targetPage = document.getElementById(targetId);
+          if (targetPage) {
+            targetPage.style.display = 'block';
+            void targetPage.offsetWidth;
+            targetPage.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'auto' });
+            targetPage.querySelectorAll('.reveal, .stagger-children').forEach(el => {
+              el.classList.remove('visible');
+              revealObserver.unobserve(el);
+              setTimeout(() => revealObserver.observe(el), 50);
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- ═══ CREATIVE INTERACTIVE FEATURES ═══ -->
+  <script>
+  (function() {
+    const cursorGlow = document.getElementById('cursorGlow');
+    const speedLinesEl = document.getElementById('speedLines');
+    const pageWipe = document.getElementById('pageWipe');
+    const allPages = document.querySelectorAll('.page');
+
+    const reRevealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    // ═══ 1. CURSOR LENS DISTORTION ═══
+    let gX = window.innerWidth / 2, gY = window.innerHeight / 2;
+    let cX = gX, cY = gY;
+    document.addEventListener('mousemove', (e) => { gX = e.clientX; gY = e.clientY; });
+    (function animGlow() {
+      cX += (gX - cX) * 0.12;
+      cY += (gY - cY) * 0.12;
+      if (cursorGlow) {
+        cursorGlow.style.left = cX + 'px';
+        cursorGlow.style.top  = cY + 'px';
+      }
+      requestAnimationFrame(animGlow);
+    })();
+    // Grow cursor on interactive elements
+    document.addEventListener('mouseover', (e) => {
+      if (!cursorGlow) return;
+      if (e.target.closest('a,button,.btn,.news-card,.team-card,.card-hover,.portfolio-card,.tier-card')) {
+        cursorGlow.classList.add('cursor-hover');
+      }
+    });
+    document.addEventListener('mouseout', (e) => {
+      if (!cursorGlow) return;
+      if (e.target.closest('a,button,.btn,.news-card,.team-card,.card-hover,.portfolio-card,.tier-card')) {
+        cursorGlow.classList.remove('cursor-hover');
+      }
+    });
+
+    // ═══ TOPOGRAPHIC LINES — cursor-reactive parallax + turbulence warp ═══
+    const topoLayers = document.querySelectorAll('#topoLines .topo-layer');
+    const topoDisp = document.getElementById('topoDisp');
+    const topoTurb = document.getElementById('topoTurb');
+    let tgtX = 0, tgtY = 0, curX = 0, curY = 0;
+    let lastMX = 0, lastMY = 0, velocity = 0, smoothVel = 0;
+    let turbSeed = 3;
+    window.addEventListener('mousemove', (e) => {
+      tgtX = (e.clientX / window.innerWidth - 0.5) * 2;
+      tgtY = (e.clientY / window.innerHeight - 0.5) * 2;
+      const dx = e.clientX - lastMX, dy = e.clientY - lastMY;
+      velocity = Math.min(Math.hypot(dx, dy), 80);
+      lastMX = e.clientX; lastMY = e.clientY;
+    }, { passive: true });
+    (function animTopo() {
+      curX += (tgtX - curX) * 0.06;
+      curY += (tgtY - curY) * 0.06;
+      topoLayers.forEach(layer => {
+        const depth = parseFloat(layer.dataset.depth) || 10;
+        layer.style.transform = `translate3d(${-curX*depth}px, ${-curY*depth}px, 0) skewX(${curX*0.8}deg)`;
+      });
+      // Smooth velocity toward zero; drive displacement + turbulence
+      smoothVel += (velocity - smoothVel) * 0.12;
+      velocity *= 0.85;
+      if (topoDisp) {
+        const scale = Math.min(smoothVel * 1.6, 90);
+        topoDisp.setAttribute('scale', scale.toFixed(1));
+      }
+      if (topoTurb) {
+        turbSeed += 0.015 + smoothVel * 0.003;
+        const freq = 0.008 + Math.min(smoothVel, 60) * 0.0004;
+        topoTurb.setAttribute('seed', (turbSeed % 1000).toFixed(2));
+        topoTurb.setAttribute('baseFrequency', freq.toFixed(4));
+      }
+      requestAnimationFrame(animTopo);
+    })();
+
+    // ═══ 2. SPEED LINES ═══
+    function fireSpeedLines() {
+      if (!speedLinesEl) return;
+      for (let i = 0; i < 14; i++) {
+        const sl = document.createElement('div');
+        sl.className = 'speed-line';
+        sl.style.top = (Math.random() * 100) + '%';
+        sl.style.width = (25 + Math.random() * 45) + '%';
+        sl.style.height = (1 + Math.random() * 2.5) + 'px';
+        sl.style.animationDelay = (Math.random() * 0.12) + 's';
+        speedLinesEl.appendChild(sl);
+        setTimeout(() => sl.classList.add('fire'), 10);
+        setTimeout(() => sl.remove(), 700);
+      }
+    }
+
+    // ═══ 3. PARTICLE BURST ═══
+    function spawnParticles(x, y) {
+      const colors = ['#63c9d3', '#7ace7b', '#a3dfe5', '#fff'];
+      for (let i = 0; i < 16; i++) {
+        const p = document.createElement('div');
+        p.className = 'click-particle';
+        const size = 3 + Math.random() * 5;
+        const angle = (Math.PI * 2 * i) / 16 + (Math.random() - 0.5) * 0.4;
+        const vel = 35 + Math.random() * 55;
+        const color = colors[i % 4];
+        p.style.cssText = 'width:'+size+'px;height:'+size+'px;left:'+x+'px;top:'+y+'px;background:'+color+';box-shadow:0 0 6px '+color;
+        document.body.appendChild(p);
+        p.animate([
+          { transform: 'translate(0,0) scale(1)', opacity: 1 },
+          { transform: 'translate('+Math.cos(angle)*vel+'px,'+Math.sin(angle)*vel+'px) scale(0)', opacity: 0 }
+        ], { duration: 450 + Math.random() * 250, easing: 'cubic-bezier(0.2,0.8,0.2,1)', fill: 'forwards' });
+        setTimeout(() => p.remove(), 800);
+      }
+    }
+
+    // ═══ 4. 3D TILT CARDS ═══
+    function initTiltCards() {
+      var sel = '.card-hover,.team-card,.achievement-card,.news-card,.tier-card,.home-card-box,.portfolio-card';
+      document.querySelectorAll(sel).forEach(function(card) {
+        if (card.dataset.tiltInit) return;
+        card.dataset.tiltInit = '1';
+        card.classList.add('tilt-card', 'glow-card');
+        card.addEventListener('mousemove', function(e) {
+          var rect = card.getBoundingClientRect();
+          var x = e.clientX - rect.left, y = e.clientY - rect.top;
+          var rotX = ((y - rect.height/2) / (rect.height/2)) * -5;
+          var rotY = ((x - rect.width/2) / (rect.width/2)) * 5;
+          card.style.transform = 'perspective(800px) rotateX('+rotX+'deg) rotateY('+rotY+'deg) translateY(-6px)';
+          card.style.setProperty('--glow-x', x + 'px');
+          card.style.setProperty('--glow-y', y + 'px');
+        });
+        card.addEventListener('mouseleave', function() { card.style.transform = ''; });
+      });
+    }
+    initTiltCards();
+
+    // ═══ 5. PAGE WIPE + SWITCH ═══
+    function doPageSwitch(targetId) {
+      fireSpeedLines();
+      if (pageWipe) { pageWipe.classList.remove('wipe-out'); pageWipe.classList.add('wipe-in'); }
+      setTimeout(function() {
+        document.querySelectorAll('.nav-links a').forEach(function(l) { l.classList.remove('active'); });
+        var navItem = document.querySelector('.nav-links a[data-target="'+targetId+'"]');
+        if (navItem) navItem.classList.add('active');
+        allPages.forEach(function(p) { p.classList.remove('active'); p.style.display = 'none'; });
+        var tp = document.getElementById(targetId);
+        if (tp) {
+          tp.style.display = 'block'; void tp.offsetWidth; tp.classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'auto' });
+          tp.querySelectorAll('.reveal, .stagger-children').forEach(function(el) {
+            el.classList.remove('visible'); reRevealObserver.unobserve(el);
+            setTimeout(function() { reRevealObserver.observe(el); }, 50);
+          });
+          initTiltCards();
+        }
+        if (pageWipe) {
+          pageWipe.classList.remove('wipe-in'); pageWipe.classList.add('wipe-out');
+          setTimeout(function() { pageWipe.classList.remove('wipe-out'); }, 320);
+        }
+      }, 260);
+    }
+
+    // ═══ 6. INTERCEPT NAV CLICKS (capture phase overrides old handler) ═══
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a[data-target]');
+      if (!link) return;
+      var targetId = link.getAttribute('data-target');
+      if (!targetId) return;
+      e.preventDefault();
+      e.stopPropagation();
+      if (link.classList.contains('btn') || link.closest('.btn')) spawnParticles(e.clientX, e.clientY);
+      var nlc = document.querySelector('.nav-links');
+      var hm = document.querySelector('.hamburger');
+      if (nlc && nlc.classList.contains('open')) { nlc.classList.remove('open'); if (hm) hm.classList.remove('open'); }
+      doPageSwitch(targetId);
+    }, true);
+
+    // ═══ 7. CLICK PARTICLES (non-nav buttons) ═══
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('a[data-target]')) return;
+      if (!e.target.closest('.btn')) return;
+      spawnParticles(e.clientX, e.clientY);
+    });
+
+    // ═══ 8. MAGNETIC NAV LINKS ═══
+    var navEls = document.querySelectorAll('.nav-links a');
+    document.addEventListener('mousemove', function(e) {
+      navEls.forEach(function(navLink) {
+        var rect = navLink.getBoundingClientRect();
+        var cx = rect.left + rect.width / 2, cy = rect.top + rect.height / 2;
+        var dx = e.clientX - cx, dy = e.clientY - cy;
+        var dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < 80) {
+          var pull = (1 - dist / 80) * 5;
+          navLink.style.transform = 'translate('+(dx/dist)*pull+'px, '+(dy/dist)*pull+'px)';
+        } else {
+          navLink.style.transform = '';
+        }
+      });
+    });
+    // ═══ 9. PHOTO ORBIT LAYOUT + UNIVERSE ═══
+    // Position orbit items in an ellipse and slowly rotate the whole wheel
+    (function() {
+      var ring = document.getElementById('photoOrbitRing');
+      if (!ring) return;
+      var items = ring.querySelectorAll('.photo-orbit-item');
+      var n = items.length;
+      var cx = 300, cy = 180;
+      var rx = 260, ry = 155;
+      var angleOffset = 0;
+      function layout() {
+        items.forEach(function(item, i) {
+          var angle = (i / n) * Math.PI * 2 - Math.PI / 2 + angleOffset;
+          var x = cx + rx * Math.cos(angle) - 65;
+          var y = cy + ry * Math.sin(angle) - 65;
+          item.style.left = x + 'px';
+          item.style.top = y + 'px';
+          // Counter-rotate each photo so it stays upright while wheel spins
+          item.style.transform = 'rotate(' + (-angleOffset * 180 / Math.PI) + 'deg)';
+        });
+      }
+      layout();
+      var SPIN_SPEED = (2 * Math.PI) / (60 * 60); // full rotation in 60 seconds @ 60fps
+      function tick() {
+        angleOffset += SPIN_SPEED;
+        layout();
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    })();
+
+    // ═══ WEBGL LIQUID DISTORTION BACKGROUND (Lando Norris style) ═══
+    (function() {
+      const canvas = document.getElementById('blobCanvas');
+      if (!canvas) return;
+      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+      if (!gl) return;
+
+      // --- SHADER SOURCE ---
+      const vsSource = `
+        attribute vec2 a_position;
+        varying vec2 v_uv;
+        void main() {
+          v_uv = a_position * 0.5 + 0.5;
+          v_uv.y = 1.0 - v_uv.y;
+          gl_Position = vec4(a_position, 0.0, 1.0);
+        }
+      `;
+
+      const fsSource = `
+        precision highp float;
+        varying vec2 v_uv;
+        uniform float u_time;
+        uniform vec2 u_mouse;
+        uniform float u_velocity;
+        uniform vec2 u_res;
+
+        // Simplex 2D noise
+        vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
+        float snoise(vec2 v){
+          const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
+          vec2 i  = floor(v + dot(v, C.yy) );
+          vec2 x0 = v -   i + dot(i, C.xx);
+          vec2 i1;
+          i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+          vec4 x12 = x0.xyxy + C.xxzz;
+          x12.xy -= i1;
+          i = mod(i, 289.0);
+          vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 )) + i.x + vec3(0.0, i1.x, 1.0 ));
+          vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+          m = m*m ;
+          m = m*m ;
+          vec3 x = 2.0 * fract(p * C.www) - 1.0;
+          vec3 h = abs(x) - 0.5;
+          vec3 a0 = x - floor(x + 0.5);
+          vec3 g = a0 * vec3(x0.x,x12.xz) + h * vec3(x0.y,x12.yw);
+          return 130.0 * dot(m, g);
+        }
+
+        void main() {
+          vec2 uv = v_uv;
+          float aspect = u_res.x / u_res.y;
+          vec2 p = (uv * 2.0 - 1.0);
+          p.x *= aspect;
+          
+          vec2 m = (u_mouse * 2.0 - 1.0);
+          m.x *= aspect;
+
+          float dist = distance(p, m);
+          
+          // Displacement based on mouse velocity
+          float distortion = smoothstep(0.6, 0.0, dist) * u_velocity * 0.15;
+          
+          // Warp UVs for the "liquid" feel
+          vec2 warpedUv = uv;
+          warpedUv.x += snoise(uv * 3.0 + u_time * 0.1) * 0.02;
+          warpedUv.y += snoise(uv * 3.0 - u_time * 0.1) * 0.02;
+          
+          // Add extra distortion near mouse
+          warpedUv += (p - m) * distortion;
+
+          // Generate topographic-style noise lines
+          float n = snoise(warpedUv * 2.5 + u_time * 0.05);
+          float n2 = snoise(warpedUv * 5.0 - u_time * 0.02);
+          
+          float wave = sin(n * 15.0 + u_time * 0.2) * 0.5 + 0.5;
+          float lines = smoothstep(0.48, 0.5, wave) - smoothstep(0.5, 0.52, wave);
+          
+          // Mixing Colors (Brand Teal & Green)
+          vec3 color1 = vec3(0.388, 0.788, 0.827); // #63c9d3
+          vec3 color2 = vec3(0.478, 0.808, 0.482); // #7ace7b
+          vec3 bg = vec3(0.941, 0.98, 0.984);    // #f0fafb (base bg)
+          
+          vec3 finalColor = mix(bg, color1, n * 0.25 + 0.15);
+          finalColor = mix(finalColor, color2, n2 * 0.2);
+          
+          // Add the "topo" lines with a stronger, more vibrant glow
+          finalColor = mix(finalColor, color1 * 1.3, lines * 0.7);
+          
+          // Highlight near mouse (the "whoosh" glow) - more vibrant
+          finalColor += (smoothstep(0.45, 0.0, dist) * u_velocity * 0.12) * color1;
+
+          gl_FragColor = vec4(finalColor, 0.95);
+        }
+      `;
+
+      function createShader(gl, type, source) {
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+          console.error(gl.getShaderInfoLog(shader));
+          gl.deleteShader(shader);
+          return null;
+        }
+        return shader;
+      }
+
+      const program = gl.createProgram();
+      gl.attachShader(program, createShader(gl, gl.VERTEX_SHADER, vsSource));
+      gl.attachShader(program, createShader(gl, gl.FRAGMENT_SHADER, fsSource));
+      gl.linkProgram(program);
+      gl.useProgram(program);
+
+      const buffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, -1,1, 1,-1, 1,1]), gl.STATIC_DRAW);
+
+      const posLoc = gl.getAttribLocation(program, 'a_position');
+      gl.enableVertexAttribArray(posLoc);
+      gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+
+      const timeLoc = gl.getUniformLocation(program, 'u_time');
+      const mouseLoc = gl.getUniformLocation(program, 'u_mouse');
+      const velLoc = gl.getUniformLocation(program, 'u_velocity');
+      const resLoc = gl.getUniformLocation(program, 'u_res');
+
+      let w, h;
+      function resize() {
+        w = window.innerWidth;
+        h = window.innerHeight;
+        canvas.width = w * window.devicePixelRatio;
+        canvas.height = h * window.devicePixelRatio;
+        gl.viewport(0, 0, canvas.width, canvas.height);
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      let mouseX = 0.5, mouseY = 0.5;
+      let lastX = 0.5, lastY = 0.5;
+      let velocity = 0;
+
+      window.addEventListener('mousemove', e => {
+        mouseX = e.clientX / w;
+        mouseY = e.clientY / h;
+      });
+
+      function render(time) {
+        // Calculate velocity (speed of mouse movement)
+        const dx = mouseX - lastX;
+        const dy = mouseY - lastY;
+        const speed = Math.sqrt(dx*dx + dy*dy) * 100;
+        velocity += (speed - velocity) * 0.1; // Smooth it
+        lastX = mouseX; lastY = mouseY;
+
+        gl.uniform1f(timeLoc, time * 0.001);
+        gl.uniform2f(mouseLoc, mouseX, mouseY);
+        gl.uniform1f(velLoc, Math.min(velocity, 5.0)); // Cap velocity
+        gl.uniform2f(resLoc, canvas.width, canvas.height);
+
+        gl.drawArrays(gl.TRIANGLES, 0, 6);
+        requestAnimationFrame(render);
+      }
+      requestAnimationFrame(render);
+    })();
+
+    var puUniverse = document.getElementById('photoUniverse');
+    var puInner = document.getElementById('puInner');
+    var puBuilt = false;
+    var puPanX = 0, puPanY = 0, puZoom = 1;
+    var puDragging = false, puStartX = 0, puStartY = 0, puStartPanX = 0, puStartPanY = 0;
+    var puPhotoDivs = [];
+    var puMouseX = 0, puMouseY = 0;
+    var REVEAL_RADIUS = 420;
+
+    // Emit floating particles
+    function spawnUniverseParticles(count) {
+      for (var i = 0; i < count; i++) {
+        (function(i){
+          setTimeout(function(){
+            if (!puUniverse.classList.contains('active')) return;
+            var p = document.createElement('div');
+            p.className = 'pu-particle';
+            var size = 2 + Math.random() * 5;
+            p.style.cssText = 'width:'+size+'px;height:'+size+'px;left:'+(Math.random()*100)+'vw;animation-duration:'+(8+Math.random()*10)+'s;animation-delay:'+(Math.random()*2)+'s;';
+            puUniverse.appendChild(p);
+            setTimeout(function(){ p.remove(); }, 22000);
+          }, i * 250);
+        })(i);
+      }
+    }
+
+    window.openPhotoUniverse = function() {
+      if (!puBuilt) {
+        puInner.innerHTML = '';
+        puPhotoDivs = [];
+        var totalPhotos = 60;
+        // Spiral layout — photos placed in an expanding spiral from center
+        // This clusters the first N photos tightly around (0,0) and spreads the rest outward
+        // The inner 'photo-universe-inner' is positioned at viewport center,
+        // so coordinates here are RELATIVE to center.
+        for (var i = 0; i < totalPhotos; i++) {
+          var el = document.createElement('div');
+          el.className = 'pu-img';
+          var w = 200 + Math.random() * 90;
+          var h = 170 + Math.random() * 70;
+
+          // Spiral: radius grows with sqrt(i) * spacing for even density
+          var radius = Math.sqrt(i) * 130 + 50;
+          // Use golden angle for pleasing non-overlapping layout
+          var theta = i * 2.399963; // golden angle in radians
+          var jitter = 30;
+          var x = Math.cos(theta) * radius + (Math.random() - 0.5) * jitter - w/2;
+          var y = Math.sin(theta) * radius * 0.7 + (Math.random() - 0.5) * jitter - h/2;
+          var rot = (Math.random() - 0.5) * 6;
+
+          el.style.width = w + 'px';
+          el.style.height = h + 'px';
+          el.style.left = x + 'px';
+          el.style.top = y + 'px';
+          el.style.borderRadius = (14 + Math.random() * 10) + 'px';
+          el.style.transform = 'rotate(' + rot + 'deg) scale(0.6)';
+          el.dataset.cx = Math.round(x + w / 2);
+          el.dataset.cy = Math.round(y + h / 2);
+          el.dataset.rot = rot;
+          el.dataset.idx = i;
+          // Distance from center — used for reveal ordering and ghost/solid state
+          el.dataset.rad = radius;
+
+          var img = document.createElement('img');
+          img.src = 'ignite_gallery_' + i + '.jpg';
+          img.alt = '';
+          img.loading = 'lazy';
+          img.onerror = function() { this.parentElement.style.display = 'none'; };
+          el.appendChild(img);
+
+          (function(src) {
+            el.addEventListener('click', function(e) {
+              if (puDragging) return;
+              e.stopPropagation();
+              var lb = document.getElementById('photoLightboxU');
+              if (lb) { lb.querySelector('img').src = src; lb.classList.add('active'); }
+            });
+          })(img.src);
+
+          puInner.appendChild(el);
+          puPhotoDivs.push(el);
+        }
+
+        // Lightbox
+        var lb = document.createElement('div');
+        lb.id = 'photoLightboxU';
+        lb.className = 'photo-lightbox';
+        lb.style.zIndex = '10002';
+        lb.innerHTML = '<div class="photo-lightbox-close" onclick="this.parentElement.classList.remove(\'active\')">&times;</div><img src="" alt="" style="border-radius:16px;">';
+        lb.addEventListener('click', function(e) { if (e.target === lb) lb.classList.remove('active'); });
+        puUniverse.appendChild(lb);
+        puBuilt = true;
+      }
+
+      // Reset all photos
+      puPhotoDivs.forEach(function(el) {
+        el.classList.remove('revealed');
+        el.classList.remove('ghost');
+        el.style.transform = 'rotate(' + el.dataset.rot + 'deg) scale(0.6)';
+      });
+
+      puPanX = 0; puPanY = 0; puZoom = 1;
+      puMouseX = window.innerWidth / 2;
+      puMouseY = window.innerHeight / 2;
+      updatePuTransform();
+      puUniverse.classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      // STAGED REVEAL:
+      // Stage 1 (immediate): ghost-reveal all photos so user can see there's more
+      // Stage 2 (after 200ms): simultaneously reveal the inner cluster (first ~12-14 photos)
+      // Stage 3 (on interaction): reveal the rest as cursor/drag approaches
+      setTimeout(function() {
+        puPhotoDivs.forEach(function(el, i) {
+          el.classList.add('ghost'); // every photo becomes dimly visible
+        });
+      }, 120);
+
+      setTimeout(function() {
+        // Simultaneously reveal the inner cluster
+        var innerCount = 14;
+        puPhotoDivs.forEach(function(el, i) {
+          if (i < innerCount) {
+            el.classList.remove('ghost');
+            el.classList.add('revealed');
+            el.style.transform = 'rotate(' + el.dataset.rot + 'deg) scale(1)';
+          }
+        });
+      }, 380);
+
+      spawnUniverseParticles(30);
+    };
+
+    function updatePuTransform() {
+      puInner.style.transform = 'translate(' + puPanX + 'px, ' + puPanY + 'px) scale(' + puZoom + ')';
+      var label = document.getElementById('puZoomLabel');
+      if (label) label.textContent = Math.round(puZoom * 100) + '%';
+    }
+
+    // Proximity reveal: check which photos are near the mouse and reveal them
+    function revealNearbyPhotos() {
+      if (!puUniverse.classList.contains('active')) return;
+      var vpCenterX = window.innerWidth / 2;
+      var vpCenterY = window.innerHeight / 2;
+      puPhotoDivs.forEach(function(el) {
+        if (el.classList.contains('revealed')) return;
+        var cx = parseFloat(el.dataset.cx);
+        var cy = parseFloat(el.dataset.cy);
+        // Photo center is at (vpCenterX + puPanX + cx*zoom, vpCenterY + puPanY + cy*zoom)
+        var screenX = vpCenterX + puPanX + cx * puZoom;
+        var screenY = vpCenterY + puPanY + cy * puZoom;
+        var dx = puMouseX - screenX;
+        var dy = puMouseY - screenY;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < REVEAL_RADIUS) {
+          el.classList.remove('ghost');
+          el.classList.add('revealed');
+          el.style.transform = 'rotate(' + el.dataset.rot + 'deg) scale(1)';
+        }
+      });
+    }
+
+    // Track mouse position
+    puUniverse.addEventListener('mousemove', function(e) {
+      puMouseX = e.clientX;
+      puMouseY = e.clientY;
+      revealNearbyPhotos();
+    });
+
+    // Drag
+    var puDragMoved = false;
+    puUniverse.addEventListener('mousedown', function(e) {
+      if (e.target.closest('.pu-close, .pu-zoom-btn, .photo-lightbox')) return;
+      puDragging = true; puDragMoved = false;
+      puStartX = e.clientX; puStartY = e.clientY;
+      puStartPanX = puPanX; puStartPanY = puPanY;
+    });
+    window.addEventListener('mousemove', function(e) {
+      if (!puDragging) return;
+      var dx = e.clientX - puStartX;
+      var dy = e.clientY - puStartY;
+      if (Math.abs(dx) > 3 || Math.abs(dy) > 3) puDragMoved = true;
+      puPanX = puStartPanX + dx;
+      puPanY = puStartPanY + dy;
+      updatePuTransform();
+      revealNearbyPhotos();
+    });
+    window.addEventListener('mouseup', function() {
+      setTimeout(function() { puDragging = false; }, 50);
+    });
+
+    // Touch drag
+    puUniverse.addEventListener('touchstart', function(e) {
+      if (e.target.closest('.pu-close, .pu-zoom-btn, .photo-lightbox')) return;
+      puDragging = true; puStartX = e.touches[0].clientX; puStartY = e.touches[0].clientY;
+      puStartPanX = puPanX; puStartPanY = puPanY;
+    }, { passive: true });
+    window.addEventListener('touchmove', function(e) {
+      if (!puDragging) return;
+      puPanX = puStartPanX + (e.touches[0].clientX - puStartX);
+      puPanY = puStartPanY + (e.touches[0].clientY - puStartY);
+      puMouseX = e.touches[0].clientX;
+      puMouseY = e.touches[0].clientY;
+      updatePuTransform();
+      revealNearbyPhotos();
+    }, { passive: true });
+    window.addEventListener('touchend', function() { puDragging = false; });
+
+    // Scroll zoom
+    puUniverse.addEventListener('wheel', function(e) {
+      e.preventDefault();
+      puZoom += e.deltaY > 0 ? -0.08 : 0.08;
+      puZoom = Math.max(0.3, Math.min(2.5, puZoom));
+      updatePuTransform();
+      revealNearbyPhotos();
+    }, { passive: false });
+
+    // Zoom buttons
+    document.getElementById('puZoomIn').addEventListener('click', function() {
+      puZoom = Math.min(2.5, puZoom + 0.15); updatePuTransform(); revealNearbyPhotos();
+    });
+    document.getElementById('puZoomOut').addEventListener('click', function() {
+      puZoom = Math.max(0.3, puZoom - 0.15); updatePuTransform(); revealNearbyPhotos();
+    });
+
+    // Close
+    document.getElementById('puClose').addEventListener('click', function() {
+      puUniverse.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+
+    // ═══ 10. PORTFOLIO VIEWER ═══
+    var pfViewer = document.getElementById('pfViewer');
+    var pfImage = document.getElementById('pfImage');
+    var pfTitle = document.getElementById('pfTitle');
+    var pfCounter = document.getElementById('pfCounter');
+    var pfLock = document.getElementById('pfLock');
+    var pfCurrentIdx = 0, pfFolder = '', pfTotal = 0, pfPreviewMode = false;
+
+    function pfUpdateBlur() {
+      var locked = pfPreviewMode && pfCurrentIdx > 0;
+      pfImage.classList.toggle('pf-blur', locked);
+      pfLock.classList.toggle('show', locked);
+    }
+
+    window.openPortfolioViewer = function(folder, title, total) {
+      pfFolder = folder; pfTotal = total; pfCurrentIdx = 0;
+      pfPreviewMode = (folder !== 'sponsorship' && total <= 2);
+      pfTitle.textContent = title;
+      pfImage.src = folder + '/1.png';
+      pfCounter.textContent = '1 / ' + total;
+      pfUpdateBlur();
+      pfViewer.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    function pfNav(dir) {
+      pfCurrentIdx = (pfCurrentIdx + dir + pfTotal) % pfTotal;
+      pfImage.src = pfFolder + '/' + (pfCurrentIdx + 1) + '.png';
+      pfCounter.textContent = (pfCurrentIdx + 1) + ' / ' + pfTotal;
+      pfUpdateBlur();
+    }
+
+    document.getElementById('pfClose').addEventListener('click', function() {
+      pfViewer.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+    document.getElementById('pfPrev').addEventListener('click', function(e) { e.stopPropagation(); pfNav(-1); });
+    document.getElementById('pfNext').addEventListener('click', function(e) { e.stopPropagation(); pfNav(1); });
+    pfViewer.addEventListener('click', function(e) {
+      if (e.target === pfViewer) { pfViewer.classList.remove('active'); document.body.style.overflow = 'auto'; }
+    });
+
+    // Keyboard nav for all viewers
+    document.addEventListener('keydown', function(e) {
+      if (pfViewer.classList.contains('active')) {
+        if (e.key === 'Escape') { pfViewer.classList.remove('active'); document.body.style.overflow = 'auto'; }
+        if (e.key === 'ArrowLeft') pfNav(-1);
+        if (e.key === 'ArrowRight') pfNav(1);
+      }
+      if (puUniverse.classList.contains('active')) {
+        if (e.key === 'Escape') { puUniverse.classList.remove('active'); document.body.style.overflow = 'auto'; }
+      }
+    });
+  })();
+  </script>
+</body>
+</html>
